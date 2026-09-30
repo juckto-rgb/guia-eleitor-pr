@@ -1,0 +1,23 @@
+# === SENSÍVEL — NUNCA versionar ===
+pipeline/.pt-key
+*.key
+*.env
+.env
+
+# === Backups locais (histórico de segurança, fora do repo) ===
+_backups/
+
+# === Node ===
+node_modules/
+package-lock.json
+
+# === Temporários / rascunho ===
+pipeline/_probe.js
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
+
+# Observação: os CSVs brutos grandes de fontes oficiais podem ser rebaixados
+# (ver pipeline/fontes/LEIA-ME-fontes.txt). O pacote fontes-csv.zip é mantido
+# no repositório como evidência de reprodutibilidade.

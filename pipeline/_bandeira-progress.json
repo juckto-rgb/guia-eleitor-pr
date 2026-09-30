@@ -1,0 +1,456 @@
+{
+ "160002547660": {
+  "nome": "FILIPE BARROS",
+  "cargo": "senador",
+  "dom": "filipebarros.com.br",
+  "status": "sem-proposta (narrativa/valores)",
+  "causas": null
+ },
+ "160002532604": {
+  "nome": "ARI RIBEIRO",
+  "cargo": "federal",
+  "dom": "ariribeiroo.com.br",
+  "status": "sem-proposta",
+  "causas": null
+ },
+ "160002547570": {
+  "nome": "DÉBORA CARVALHO",
+  "cargo": "federal",
+  "dom": "soudeboracarvalho.com.br",
+  "status": "aplicada",
+  "causas": [
+   "agro"
+  ]
+ },
+ "160002547586": {
+  "nome": "MARTA PADOVANI",
+  "cargo": "federal",
+  "dom": "martapadovani.com.br",
+  "status": "sem-proposta (pauta de valores)",
+  "causas": null
+ },
+ "160002536511": {
+  "nome": "CAROL SILVA",
+  "cargo": "federal",
+  "dom": "carolsilva1324.com.br",
+  "status": "aplicada",
+  "causas": [
+   "trabalho",
+   "mobilidade",
+   "saude",
+   "inclusao",
+   "transparencia"
+  ]
+ },
+ "160002547466": {
+  "nome": "DA COSTA DO PERDEU PIÁ",
+  "cargo": "federal",
+  "dom": "perdeupia.com.br",
+  "status": "sem-proposta",
+  "causas": null
+ },
+ "160002553358": {
+  "nome": "CLEIR BRANDÃO",
+  "cargo": "federal",
+  "dom": "cleirbrandao.com.br",
+  "status": "sem-proposta",
+  "causas": null
+ },
+ "160002549530": {
+  "nome": "TULIO BANDEIRA",
+  "cargo": "federal",
+  "dom": "gmail.com",
+  "status": "sem-proposta",
+  "causas": null
+ },
+ "160002542287": {
+  "nome": "JEFFREY CHIQUINI",
+  "cargo": "federal",
+  "dom": "chiquini.com.br",
+  "status": "aplicada",
+  "causas": [
+   "transparencia",
+   "social",
+   "seguranca"
+  ]
+ },
+ "160002547465": {
+  "nome": "DANIEL GODRI JR",
+  "cargo": "federal",
+  "dom": "danielgodri.com.br",
+  "status": "sem-proposta",
+  "causas": null
+ },
+ "160002540790": {
+  "nome": "ALOISIO NASCIMENTO",
+  "cargo": "federal",
+  "dom": "aloisionascimento.com.br",
+  "status": "dominio morto",
+  "causas": null
+ },
+ "160002549528": {
+  "nome": "IZAIAS SALUSTIANO",
+  "cargo": "federal",
+  "dom": "salustiano.com.br",
+  "status": "inacessivel (403)",
+  "causas": null
+ },
+ "160002532592": {
+  "nome": "OMAR PICHETH",
+  "cargo": "federal",
+  "dom": "picheth.com.br",
+  "status": "sem-proposta",
+  "causas": null
+ },
+ "160002549541": {
+  "nome": "THAIS TAKAHASHI",
+  "cargo": "federal",
+  "dom": "thaistakahashi.com.br",
+  "status": "sem-proposta",
+  "causas": null
+ },
+ "160002549548": {
+  "nome": "LUIS LELIS",
+  "cargo": "federal",
+  "dom": "luislelis.com.br",
+  "status": "aplicada",
+  "causas": [
+   "saude",
+   "educacao",
+   "social",
+   "transparencia",
+   "seguranca"
+  ]
+ },
+ "160002552565": {
+  "nome": "ENILCE FERREIRA",
+  "cargo": "federal",
+  "dom": "pco.org.br",
+  "status": "sem-proposta",
+  "causas": null
+ },
+ "160002554273": {
+  "nome": "GIBELLE",
+  "cargo": "federal",
+  "dom": "falagibelle.com.br",
+  "status": "dominio morto",
+  "causas": null
+ },
+ "160002542373": {
+  "nome": "SAMMY GOMES",
+  "cargo": "estadual",
+  "dom": "sammygomes.com",
+  "status": "sem-proposta",
+  "causas": null
+ },
+ "160002546805": {
+  "nome": "TRAIANO",
+  "cargo": "estadual",
+  "dom": "traiano.com.br",
+  "status": "aplicada",
+  "causas": [
+   "infra",
+   "agro"
+  ]
+ },
+ "160002547493": {
+  "nome": "JULIETTE RODRIGUES",
+  "cargo": "estadual",
+  "dom": "julietterodrigues.com.br",
+  "status": "dominio morto",
+  "causas": null
+ },
+ "160002547645": {
+  "nome": "DRA CARLA ROSANE",
+  "cargo": "estadual",
+  "dom": "dracarlarosane.com.br",
+  "status": "sem-proposta",
+  "causas": null
+ },
+ "160002547698": {
+  "nome": "BETO LUNITTI",
+  "cargo": "estadual",
+  "dom": "betolunitti.com.br",
+  "status": "sem-proposta",
+  "causas": null
+ },
+ "160002542239": {
+  "nome": "MARCELO MAIA",
+  "cargo": "estadual",
+  "dom": "marcelomaia.org",
+  "status": "sem-proposta",
+  "causas": null
+ },
+ "160002542248": {
+  "nome": "MARIO VERRI",
+  "cargo": "estadual",
+  "dom": "marioverri.com",
+  "status": "inacessivel (fora do ar)",
+  "causas": null
+ },
+ "160002542382": {
+  "nome": "BRUNO SECCO",
+  "cargo": "estadual",
+  "dom": "brunosecco.com.br",
+  "status": "sem-proposta",
+  "causas": null
+ },
+ "160002546816": {
+  "nome": "MARCELO ROQUE",
+  "cargo": "estadual",
+  "dom": "marceloroquelitoral.com.br",
+  "status": "sem-proposta",
+  "causas": null
+ },
+ "160002547630": {
+  "nome": "DR. CESAR MELLO",
+  "cargo": "estadual",
+  "dom": "cesarmello.com.br",
+  "status": "sem-proposta",
+  "causas": null
+ },
+ "160002547672": {
+  "nome": "NOEMIA ROCHA",
+  "cargo": "estadual",
+  "dom": "noemiarocha.com.br",
+  "status": "dominio morto",
+  "causas": null
+ },
+ "160002533439": {
+  "nome": "ADOALDO SÁ",
+  "cargo": "estadual",
+  "dom": "adoaldosa.com.br",
+  "status": "sem-proposta",
+  "causas": null
+ },
+ "160002546877": {
+  "nome": "THADEU REQUIÃO",
+  "cargo": "estadual",
+  "dom": "thadeurequiao.com.br",
+  "status": "dominio morto",
+  "causas": null
+ },
+ "160002542261": {
+  "nome": "THAYS BIEBERBACH",
+  "cargo": "estadual",
+  "dom": "thaysbieberbach.com",
+  "status": "inacessivel (fora do ar)",
+  "causas": null
+ },
+ "160002542357": {
+  "nome": "MARINHO GUIMARAES",
+  "cargo": "estadual",
+  "dom": "marinhoguimaraes.com.br",
+  "status": "dominio morto",
+  "causas": null
+ },
+ "160002547499": {
+  "nome": "JUCA",
+  "cargo": "estadual",
+  "dom": "jucamcr.com.br",
+  "status": "aplicada",
+  "causas": [
+   "transparencia",
+   "economia",
+   "infra",
+   "trabalho",
+   "seguranca"
+  ]
+ },
+ "160002547673": {
+  "nome": "MARCELO PASSOS",
+  "cargo": "estadual",
+  "dom": "marcelopassospr.com.br",
+  "status": "aplicada",
+  "causas": [
+   "saude",
+   "transparencia",
+   "social"
+  ]
+ },
+ "160002542234": {
+  "nome": "GIORGIA PRATES",
+  "cargo": "estadual",
+  "dom": "giorgiaprates.com.br",
+  "status": "inacessivel (SSL quebrado)",
+  "causas": null
+ },
+ "160002542380": {
+  "nome": "RODRIGO MARCIAL",
+  "cargo": "estadual",
+  "dom": "rodrigomarcial.com.br",
+  "status": "aplicada",
+  "causas": [
+   "cultura",
+   "transparencia",
+   "economia",
+   "moradia",
+   "educacao"
+  ]
+ },
+ "160002546860": {
+  "nome": "DRA. DAYANE CORDEIRO",
+  "cargo": "estadual",
+  "dom": "dradayanecordeiro12220.com.br",
+  "status": "aplicada",
+  "causas": [
+   "saude",
+   "inclusao",
+   "trabalho",
+   "cultura",
+   "mobilidade"
+  ]
+ },
+ "160002551176": {
+  "nome": "ALESSANDRA LIMA",
+  "cargo": "estadual",
+  "dom": "missaoparana.com.br",
+  "status": "aplicada",
+  "causas": [
+   "seguranca",
+   "educacao",
+   "trabalho",
+   "transparencia",
+   "economia"
+  ]
+ },
+ "160002542268": {
+  "nome": "DRA. DEBORAH ZANCHI",
+  "cargo": "estadual",
+  "dom": "dradeborahzanchi.com.br",
+  "status": "dominio morto",
+  "causas": null
+ },
+ "160002542376": {
+  "nome": "SIMONE MARTINI",
+  "cargo": "estadual",
+  "dom": "simartini.com.br",
+  "status": "aplicada",
+  "causas": [
+   "saude",
+   "educacao",
+   "seguranca",
+   "animal",
+   "social"
+  ]
+ },
+ "160002547735": {
+  "nome": "GABRIEL",
+  "cargo": "estadual",
+  "dom": "falagabriel.com.br",
+  "status": "sem-proposta",
+  "causas": null
+ },
+ "160002547944": {
+  "nome": "JORGE MARCO LEILOEIRO",
+  "cargo": "estadual",
+  "dom": "jorgemarcoleiloes.com.br",
+  "status": "sem-proposta",
+  "causas": null
+ },
+ "160002551179": {
+  "nome": "BRUNO VIEIRA",
+  "cargo": "estadual",
+  "dom": "brunomissao.com.br",
+  "status": "dominio morto",
+  "causas": null
+ },
+ "160002552827": {
+  "nome": "ADRIANO AMARAL VIANA",
+  "cargo": "estadual",
+  "dom": "queroapoiar.com.br",
+  "status": "sem-proposta",
+  "causas": null
+ },
+ "160002542247": {
+  "nome": "ANDREIA DE LIMA",
+  "cargo": "estadual",
+  "dom": "andreiadelima.com",
+  "status": "dominio morto",
+  "causas": null
+ },
+ "160002546808": {
+  "nome": "ROMANELLI",
+  "cargo": "estadual",
+  "dom": "deputadoromanelli.com.br",
+  "status": "aplicada",
+  "causas": [
+   "infra",
+   "saude",
+   "agro"
+  ]
+ },
+ "160002546813": {
+  "nome": "ULISSES MAIA",
+  "cargo": "estadual",
+  "dom": "ulissesmaia.com.br",
+  "status": "aplicada",
+  "causas": [
+   "inovacao",
+   "infra",
+   "trabalho",
+   "transparencia",
+   "ambiente"
+  ]
+ },
+ "160002546882": {
+  "nome": "MARCOS VIEIRA",
+  "cargo": "estadual",
+  "dom": "marcosvieirapr.com.br",
+  "status": "sem-proposta",
+  "causas": null
+ },
+ "160002547503": {
+  "nome": "DANIEL ANDRASCHKO",
+  "cargo": "estadual",
+  "dom": "danielandraschko.com.br",
+  "status": "sem-proposta",
+  "causas": null
+ },
+ "160002547521": {
+  "nome": "ALLAX SIQUEIRA",
+  "cargo": "estadual",
+  "dom": "allaxsiqueira.com.br",
+  "status": "dominio morto",
+  "causas": null
+ },
+ "160002533465": {
+  "nome": "DR. JEFFERSON",
+  "cargo": "estadual",
+  "dom": "advjeffersonsilva.com.br",
+  "status": "sem-proposta (site advocacia)",
+  "causas": null
+ },
+ "160002533479": {
+  "nome": "ALISSON ANTHONY WANDSCHEER",
+  "cargo": "estadual",
+  "dom": "deputadoalisson.com.br",
+  "status": "aplicada",
+  "causas": [
+   "inclusao",
+   "saude",
+   "transparencia"
+  ]
+ },
+ "160002547584": {
+  "nome": "OLIMPIO",
+  "cargo": "federal",
+  "dom": "olimpioaraujojunior.com",
+  "status": "aplicada",
+  "causas": [
+   "seguranca",
+   "economia",
+   "agro",
+   "infra",
+   "social",
+   "transparencia"
+  ]
+ },
+ "160002542231": {
+  "nome": "ANGELO VANHONI",
+  "cargo": "estadual",
+  "dom": "vanhoni.com.br",
+  "status": "domínio morto (Wix ConnectYourDomain)",
+  "causas": null
+ }
+}

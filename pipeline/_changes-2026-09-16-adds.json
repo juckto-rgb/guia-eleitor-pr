@@ -1,0 +1,12 @@
+{
+"_nota": "Checagem 16/09 — adicionar 2 deputados federais novos (Pendente de julgamento). Presidente Leonardo Avalanche fica à parte (majoritário/re-key).",
+"remover": [],
+"deps": [
+  {"sq":"160002554481","nome":"ANAJARA","num":2226,"part":"PL","cargo":"federal","ocup":"EMPRESÁRIO","grau":"ENSINO MÉDIO COMPLETO","idade":36},
+  {"sq":"160002554488","nome":"OSWALDO EUSTÁQUIO","num":4401,"part":"UNIÃO","cargo":"federal","ocup":"JORNALISTA E REDATOR","grau":"SUPERIOR COMPLETO","idade":48}
+],
+"detail": {
+  "160002554481": {"nc":"ANAJARA LEANDRO DE SOUSA","sit":"Aguardando julgamento","nat":"BRASÍLIA/DF","tot":0,"proc":0,"bens":[],"hist":[{"a":2026,"c":"Deputado Federal","r":"Concorrendo","l":"PARANÁ"}],"sites":["https://www.instagram.com/anajaraleandrooficial/"],"atual":""},
+  "160002554488": {"nc":"OSWALDO EUSTAQUIO FILHO","sit":"Aguardando julgamento","nat":"FLORIANÓPOLIS/SC","tot":0,"proc":0,"bens":[],"hist":[{"a":2026,"c":"Deputado Federal","r":"Concorrendo","l":"PARANÁ"},{"a":2022,"c":"Deputado Federal","r":"Suplente","l":"PARANÁ"}],"sites":["https://www.instagram.com/oswaldo_eustaquio46","https://www.oswaldoeustaquio.com.br","https://x.com/Tsedekenu","https://www.instagram.com/oswaldo_eustaquio47/","https://www.youtube.com/@OswaldoEustaquioreal","https://www.facebook.com/profile.php?id=61555037596536"],"atual":""}
+}
+}

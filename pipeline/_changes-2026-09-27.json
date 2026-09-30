@@ -1,0 +1,48 @@
+{
+"_nota": "Checagem 27/09 — 2 candidaturas que viraram Deferidas entram no guia (Robison Pedroso/federal, Ivandro Biscaia/estadual). Selos (19) tratados à parte. Sem remoções.",
+"remover": [],
+"deps": [
+  {"sq":"160002542312","nome":"ROBISON PEDROSO","num":3044,"part":"NOVO","cargo":"federal","ocup":"ADMINISTRADOR","grau":"SUPERIOR COMPLETO","idade":45},
+  {"sq":"160002553667","nome":"IVANDRO BISCAIA","num":35350,"part":"DEMOCRATA","cargo":"estadual","ocup":"COMERCIANTE","grau":"ENSINO MÉDIO COMPLETO","idade":54}
+],
+"detail": {
+  "160002542312": {
+    "nc":"ROBISON PEDROSO DA SILVA",
+    "sit":"Deferido",
+    "nat":"ITAJAÍ/SC",
+    "tot":158273.47,
+    "proc":0,
+    "bens":[
+      {"t":"Veículo automotor terrestre: caminhão, automóvel, moto, etc.","v":10273.47},
+      {"t":"Casa","v":43000},
+      {"t":"Veículo automotor terrestre: caminhão, automóvel, moto, etc.","v":105000}
+    ],
+    "hist":[
+      {"a":2026,"c":"Deputado Federal","r":"Concorrendo","l":"PARANÁ"},
+      {"a":2024,"c":"Prefeito","r":"Não eleito","l":"JUSSARA"},
+      {"a":2020,"c":"Prefeito","r":"Eleito","l":"JUSSARA"},
+      {"a":2016,"c":"Vice-prefeito","r":"Eleito","l":"JUSSARA"},
+      {"a":2012,"c":"Vice-prefeito","r":"Eleito","l":"JUSSARA"},
+      {"a":2008,"c":"Vereador","r":"Eleito","l":"JUSSARA"}
+    ],
+    "sites":["https://www.tiktok.com/@robison.pedroso.d","https://www.facebook.com/robisonpedroso.jussara.parana","https://www.instagram.com/robisonpedroso"],
+    "atual":"2026-08-07"
+  },
+  "160002553667": {
+    "nc":"IVANDRO APARECIDO BISCAIA",
+    "sit":"Deferido",
+    "nat":"CAMPO MOURÃO/PR",
+    "tot":0,
+    "proc":0,
+    "bens":[],
+    "hist":[
+      {"a":2026,"c":"Deputado Estadual","r":"Concorrendo","l":"PARANÁ"},
+      {"a":2022,"c":"Deputado Federal","r":"Não eleito","l":"PARANÁ"},
+      {"a":2020,"c":"Vereador","r":"Não eleito","l":"CURITIBA"},
+      {"a":2016,"c":"Vereador","r":"Suplente","l":"CURITIBA"}
+    ],
+    "sites":[],
+    "atual":""
+  }
+}
+}

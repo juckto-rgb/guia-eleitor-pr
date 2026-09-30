@@ -1,0 +1,10 @@
+{
+"_nota": "Gerado pela checagem de 2026-09-09. NÃO aplicado — aguardando aprovação da Juliana. remover = 4 federais + 9 estaduais (Indeferido/Renúncia, todos 'Não consta da urna'/inapto). adicionar = 1 estadual (MANINHO DAS FRUTAS, provável substituto de LUCAS RAMOS/CIDADANIA que renunciou).",
+"remover":["160002553651","160002547709","160002553653","160002542312","160002551166","160002552814","160002552790","160002533448","160002549511","160002553668","160002553667","160002547942","160002552792"],
+"deps":[
+{"sq":"160002554377","nome":"MANINHO DAS FRUTAS","num":23833,"part":"CIDADANIA","cargo":"estadual","ocup":"Outros","grau":"Ensino Médio incompleto","idade":58}
+],
+"detail":{
+"160002554377":{"nc":"LUIZ CARLOS DOS SANTOS","sit":"Aguardando julgamento","nat":"UMUARAMA/PR","tot":0,"proc":0,"bens":[],"hist":[{"a":2024,"c":"Vereador","r":"Não eleito","l":"CURITIBA"},{"a":2020,"c":"Vereador","r":"Suplente","l":"CURITIBA"},{"a":2018,"c":"Deputado Estadual","r":"Suplente","l":"PARANÁ"},{"a":2016,"c":"Vereador","r":"Suplente","l":"CURITIBA"},{"a":2014,"c":"Deputado Estadual","r":"Suplente","l":"PARANÁ"}],"sites":["https://www.facebook.com/luiz.carlos.772195"],"atual":"2026-09-08"}
+}
+}

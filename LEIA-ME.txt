@@ -1,0 +1,28 @@
+GUIA ELEITOR · PARANÁ 2026
+Iniciativa não comercial e apartidária da Sorttie · dados públicos do TSE
+
+ARQUIVO
+- index.html → o app inteiro em um único arquivo (fotos, ícones, dados e logo embutidos).
+  Abre direto no navegador (duplo clique) e funciona offline.
+- No ar: guiaeleitorpr.sorttie.com.br
+
+COMO PUBLICAR (Vercel)
+1. Painel do Vercel (time Sorttie), projeto do Guia Eleitor PR.
+2. ARRASTE o index.html para o deploy (substitui a versão atual).
+3. Depois de publicar, dê Ctrl+Shift+R no site (o navegador pode servir cache antigo).
+
+CONTEÚDO
+- ~1.023 candidatos do PR ao vivo (Presidente, Governador, Senador, Dep. Federal e Estadual).
+- Situação (Deferido/Em análise), evolução patrimonial por eleição e, para deputados
+  federais atuais, as emendas do mandato (Portal da Transparência/CGU).
+
+FONTE E NEUTRALIDADE
+- Dados da Divulgação de Candidaturas do TSE (+ Câmara, ALEP, Senado e Portal da
+  Transparência), com data de atualização à mostra no rodapé.
+- Material informativo, sem ranking e sem opinião — não é propaganda eleitoral.
+- Nada inventado: só dado oficial.
+
+ATUALIZAR OS DADOS (pasta pipeline/)
+- check-updates.cjs gera um relatório de mudanças (candidatos indeferidos/renúncia/novos)
+  para revisão; apply-changes.cjs aplica após aprovação. Sempre revisar antes de publicar.
+- A coleta do TSE precisa rodar no navegador (o WAF bloqueia scripts diretos).

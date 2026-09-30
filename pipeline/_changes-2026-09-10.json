@@ -1,0 +1,18 @@
+{
+"_nota": "Gerado pela checagem de 2026-09-10 (via divulgacandcontas.tse.jus.br). NÃO aplicado — aguardando aprovação da Juliana. remover = 6 federais + 4 estaduais (Indeferido/Renúncia). Sem adições (nenhum novo candidato Deferido/Aguardando julgamento fora do guia). Senador, Presidente e Governador: sem mudanças.",
+"remover":["160002553657","160002554123","160002554124","160002553962","160002554125","160002554126","160002547735","160002553672","160002542378","160002554128"],
+"remover_detalhe":[
+  {"sq":"160002553657","nome":"TAÍS BÁRBARA","cargo":"federal","sit":"Indeferido"},
+  {"sq":"160002554123","nome":"ROSEMARIE","cargo":"federal","sit":"Indeferido"},
+  {"sq":"160002554124","nome":"SCHULZ","cargo":"federal","sit":"Indeferido"},
+  {"sq":"160002553962","nome":"APARECIDO GARCIA","cargo":"federal","sit":"Indeferido"},
+  {"sq":"160002554125","nome":"DANIEL NEGÃO","cargo":"federal","sit":"Indeferido"},
+  {"sq":"160002554126","nome":"DANI ALMEIDA","cargo":"federal","sit":"Renúncia"},
+  {"sq":"160002547735","nome":"GABRIEL","cargo":"estadual","sit":"Indeferido"},
+  {"sq":"160002553672","nome":"KEILA RAMOS","cargo":"estadual","sit":"Indeferido"},
+  {"sq":"160002542378","nome":"CRIS LAUER","cargo":"estadual","sit":"Renúncia"},
+  {"sq":"160002554128","nome":"BAIXINHO DA DALABONA","cargo":"estadual","sit":"Indeferido"}
+],
+"deps":[],
+"detail":{}
+}

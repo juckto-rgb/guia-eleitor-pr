@@ -1,0 +1,20 @@
+module.exports={
+ saude:['saude publica','sus','hospital','postos? de saude','\\bupa\\b','\\bubs\\b','vacina','cancer','oncolog','farmaceut','medicament','santa casa','\\bsamu\\b','enfermeir','pronto.?socorro','saude '],
+ educacao:['educacao','escola','professor','ensino','universidad','creche','alfabetiz','magisterio','merenda','bolsa de estudo','aluno','estudante'],
+ seguranca:['seguranca publica','\\bpolicia','policial','violenc','\\bcrime','criminal','delegad','guarda municipal','combate ao crime','trafico','penitenci','\\bbandid','armament'],
+ economia:['empreend','desburocra','\\bcnpj\\b','geracao de emprego','desenvolvimento economic','\\bcomercio\\b','industria','imposto','tributari','livre mercado','abertura de empresa','microempre','investimento','pequenos negocios'],
+ agro:['agroneg','agricultura','agricultor','produtor rural','pecuar','\\brural\\b','cooperativ','agricultura familiar','\\bcampo\\b','safra','\\bagro\\b'],
+ animal:['causa animal','protecao animal','castraca','maus.?tratos','bem.?estar animal','abandono de animais','direito dos animais'],
+ cultura:['\\bcultura','cultural','artist','\\bmusic','teatro','patrimonio historic','audiovisual','festival','\\bcarnaval'],
+ social:['assistencia social','vulnerab','\\bpobreza','\\bfome','desigualdad','inclusao social','direitos das mulheres','\\bnegr','indigen','quilombol','\\blgbt','refugiad','migrant','\\bidoso','povos','periferia','direitos human'],
+ transparencia:['transparenc','\\bcorrupca','anticorrup','fiscaliz','prestacao de contas','lava jato','improbidade','ficha limpa','combate a corrupca','\\bhonest'],
+ esporte:['\\besporte','esportiv','\\batleta','olimpic','\\bfutebol','ginasio','quadra esportiva','paralimpic'],
+ inclusao:['pessoa com deficienc','\\bpcd\\b','acessibilidad','\\bautis','\\blibras\\b','cadeirante','deficiente','inclusao social','inclusao de pessoas','inclusao produtiva','\\binclusao\\b'],
+ infra:['infraestrutura','pavimenta','asfalt','rodovi','\\bestrada','saneament','\\bobras\\b','\\bponte','\\bbr-','drenagem','iluminacao publica'],
+ inovacao:['inovaca','tecnolog','startup','inteligencia artificial','conectividade','\\b5g\\b','transformacao digital','inclusao digital','governo digital','economia digital','cidade intelig','digitalizac','banda larga'],
+ juventude:['juventude','\\bjovens\\b','\\bjovem\\b','primeiro emprego','estudantil','protagonismo juvenil'],
+ ambiente:['meio ambiente','\\bambient','sustentab','\\bclima','climatic','reciclag','\\bfloresta','desmatament','energia renovavel','preservaca','\\bnascentes','recursos hidric'],
+ mobilidade:['mobilidade','transporte public','transporte coletiv','ciclovi','\\bonibus\\b','\\btransito\\b','\\bpedestre'],
+ moradia:['moradia','habitaca','casa propria','deficit habitacional','regularizacao fundiaria','\\baluguel'],
+ trabalho:['trabalhador','sindicat','direitos trabalhista','\\bclt\\b','\\bsalario','servidor public','categoria profissional','emprego formal']
+};

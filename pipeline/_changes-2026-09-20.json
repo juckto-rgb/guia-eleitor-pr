@@ -1,0 +1,38 @@
+{
+"_nota": "Checagem 20/09 — remover 1 renúncia (Edivande Freitas/estadual) + adicionar 1 deferido novo (Zezinho Fisioterapeuta/federal). Selos (55) e Avalanche/19 indeferidos tratados à parte.",
+"remover": ["160002553379"],
+"deps": [
+  {"sq":"160002542214","nome":"ZEZINHO FISIOTERAPEUTA","num":1233,"part":"PDT","cargo":"federal","ocup":"FISIOTERAPEUTA E TERAPEUTA OCUPACIONAL","grau":"SUPERIOR COMPLETO","idade":56}
+],
+"detail": {
+  "160002542214": {
+    "nc":"JOSE GIULIANGELI DE CASTRO",
+    "sit":"Deferido",
+    "nat":"PARANAVAÍ/PR",
+    "tot":171285.04,
+    "proc":0,
+    "bens":[
+      {"t":"Veículo automotor terrestre: caminhão, automóvel, moto, etc.","v":6000},
+      {"t":"Outros créditos e poupança vinculados","v":6939.27},
+      {"t":"Veículo automotor terrestre: caminhão, automóvel, moto, etc.","v":67420.77},
+      {"t":"Caderneta de poupança","v":1925},
+      {"t":"Casa","v":63000},
+      {"t":"Veículo automotor terrestre: caminhão, automóvel, moto, etc.","v":26000}
+    ],
+    "hist":[
+      {"a":2026,"c":"Deputado Federal","r":"Concorrendo","l":"PARANÁ"},
+      {"a":2024,"c":"Vereador","r":"Não eleito","l":"LONDRINA"},
+      {"a":2022,"c":"Deputado Federal","r":"Não eleito","l":"PARANÁ"},
+      {"a":2020,"c":"Vereador","r":"Suplente","l":"LONDRINA"},
+      {"a":2018,"c":"Deputado Federal","r":"Suplente","l":"PARANÁ"},
+      {"a":2016,"c":"Vereador","r":"Suplente","l":"LONDRINA"},
+      {"a":2014,"c":"Deputado Federal","r":"Suplente","l":"PARANÁ"},
+      {"a":2008,"c":"Prefeito","r":"Não eleito","l":"ROLÂNDIA"},
+      {"a":2006,"c":"Deputado Federal","r":"Não eleito","l":"PARANÁ"},
+      {"a":2004,"c":"Vereador","r":"Não eleito","l":"ROLÂNDIA"}
+    ],
+    "sites":["https://zezinhofisioterapeuta.com.br/","https://www.instagram.com/zezinho_fisioterapeuta/","https://www.facebook.com/ZezinhoFisioterapeuta"],
+    "atual":"2026-08-07"
+  }
+}
+}

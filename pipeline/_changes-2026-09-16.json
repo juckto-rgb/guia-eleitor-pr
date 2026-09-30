@@ -1,0 +1,16 @@
+{
+ "_nota": "Checagem 16/09: remover renúncia; situação atualizada via _sitmap; 3 adições (2 fed + 1 pres) à parte.",
+ "remover": [
+  "160002547566"
+ ],
+ "remover_detalhe": [
+  {
+   "sq": "160002547566",
+   "nome": "MIRIAM FERREIRA",
+   "cargo": "federal",
+   "sit": "Renúncia"
+  }
+ ],
+ "deps": [],
+ "detail": {}
+}
