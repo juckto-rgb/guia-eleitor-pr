@@ -1,0 +1,185 @@
+<title>Teste de Usabilidade — Guia Eleitor</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+  :root{
+    --paper:#F4F4F8; --card:#FFFFFF; --ink:#1B1A26; --muted:#65647A;
+    --line:#E4E3EE; --line-strong:#D2D0E0;
+    --accent:#3A376E; --accent-2:#6C67B6; --accent-soft:rgba(58,55,110,.08);
+    --good:#2E8B57; --amber:#B0741A;
+    --shadow:0 1px 2px rgba(27,26,38,.04),0 8px 24px rgba(27,26,38,.06);
+  }
+  @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+    --paper:#131220; --card:#1D1C2B; --ink:#ECEBF4; --muted:#9B9AB2;
+    --line:#2C2B3E; --line-strong:#3A3850; --accent:#A9A4EC; --accent-2:#8b86d8;
+    --accent-soft:rgba(169,164,236,.13); --good:#5CC48A; --amber:#E0A64C;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 30px rgba(0,0,0,.35);
+  }}
+  :root[data-theme="dark"]{
+    --paper:#131220; --card:#1D1C2B; --ink:#ECEBF4; --muted:#9B9AB2;
+    --line:#2C2B3E; --line-strong:#3A3850; --accent:#A9A4EC; --accent-2:#8b86d8;
+    --accent-soft:rgba(169,164,236,.13); --good:#5CC48A; --amber:#E0A64C;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 30px rgba(0,0,0,.35);
+  }
+  *{box-sizing:border-box}
+  body{background:var(--paper);color:var(--ink);font-family:"Public Sans",system-ui,sans-serif;line-height:1.55;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:820px;margin:0 auto;padding-block:0 64px;padding-left:20px;padding-right:20px}
+  h1,h2,h3{font-family:"Fraunces",Georgia,serif;text-wrap:balance;line-height:1.14;margin:0}
+  a{color:var(--accent-2)}
+  code{font-family:"IBM Plex Mono",monospace;font-size:.9em;background:var(--accent-soft);padding:1px 5px;border-radius:5px}
+
+  header.mast{padding-block:44px 24px;border-bottom:2px solid var(--ink)}
+  .eyebrow{font-family:"IBM Plex Mono",monospace;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--accent-2);margin-bottom:14px}
+  h1{font-size:clamp(30px,6vw,46px);font-weight:600;letter-spacing:-.01em}
+  .dek{font-size:16px;color:var(--muted);margin-top:12px;max-width:62ch}
+
+  section{padding-block:34px 0}
+  .shead{display:flex;align-items:baseline;gap:12px;margin-bottom:16px}
+  .shead .n{font-family:"IBM Plex Mono",monospace;font-size:13px;color:var(--accent-2)}
+  .shead h2{font-size:clamp(20px,4vw,26px);font-weight:600}
+  p.lead{color:var(--muted);font-size:14.5px;margin:0 0 14px}
+
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  .box{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px;box-shadow:var(--shadow)}
+  .box h3{font-size:14.5px;font-weight:600;margin-bottom:6px}
+  .box p,.box li{font-size:13.5px;color:var(--muted)}
+  ul{margin:6px 0 0;padding-left:18px} li{margin:4px 0}
+
+  .task{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px 16px 54px;position:relative;box-shadow:var(--shadow);margin-bottom:12px}
+  .task::before{counter-increment:t;content:"T"counter(t);position:absolute;left:14px;top:16px;width:30px;height:26px;border-radius:8px;background:var(--accent);color:#fff;display:grid;place-items:center;font-family:"IBM Plex Mono",monospace;font-size:12px;font-weight:600}
+  :root[data-theme="dark"] .task::before,:root:not([data-theme="light"]) .task::before{color:#1a1730}
+  .tasks{counter-reset:t}
+  .task h3{font-size:15px;font-weight:600;margin-bottom:5px}
+  .task .cen{font-size:14px;margin-bottom:8px}
+  .task .meta{font-size:12.5px;color:var(--muted);border-top:1px dashed var(--line-strong);padding-top:8px;margin-top:8px}
+  .task .meta b{color:var(--ink)}
+  .tag{display:inline-block;font-family:"IBM Plex Mono",monospace;font-size:10.5px;text-transform:uppercase;letter-spacing:.04em;padding:2px 7px;border-radius:999px;background:var(--accent-soft);color:var(--accent);margin-left:6px}
+
+  table{width:100%;border-collapse:collapse;font-size:13.5px;background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden;box-shadow:var(--shadow)}
+  th,td{text-align:left;padding:9px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);font-weight:500}
+  tbody tr:last-child td{border-bottom:none}
+  .tblwrap{overflow-x:auto}
+  td.pole{white-space:nowrap;font-weight:600} td.scale{font-family:"IBM Plex Mono",monospace;color:var(--muted);text-align:center;letter-spacing:.1em}
+  td.dim{text-align:right;color:var(--muted);font-family:"IBM Plex Mono",monospace;font-size:11px}
+
+  .note{background:var(--accent-soft);border:1px solid color-mix(in srgb,var(--accent) 22%,transparent);border-radius:14px;padding:15px 18px;font-size:13.5px}
+  .note b{font-weight:600}
+  ol.steps{counter-reset:s;list-style:none;padding:0;margin:0}
+  ol.steps li{position:relative;padding-left:30px;margin:9px 0;font-size:14px}
+  ol.steps li::before{counter-increment:s;content:counter(s);position:absolute;left:0;top:0;width:20px;height:20px;border-radius:50%;background:var(--accent);color:#fff;display:grid;place-items:center;font-size:11px;font-family:"IBM Plex Mono",monospace}
+  :root[data-theme="dark"] ol.steps li::before,:root:not([data-theme="light"]) ol.steps li::before{color:#1a1730}
+  footer{margin-top:46px;padding-top:20px;border-top:1px solid var(--line);font-size:12.5px;color:var(--muted)}
+  @media (max-width:620px){.grid2{grid-template-columns:1fr}}
+</style>
+
+<div class="wrap">
+  <header class="mast">
+    <div class="eyebrow">Pesquisa com usuários · Sorttie</div>
+    <h1>Teste de Usabilidade — Guia Eleitor PR</h1>
+    <p class="dek">Roteiro para avaliar, com pessoas reais, se o guia é fácil de entender e usar — com tarefas guiadas, o questionário validado <b>UEQ</b> e um termo de consentimento LGPD. Pronto para aplicar com 5 a 8 participantes.</p>
+  </header>
+
+  <section>
+    <div class="shead"><span class="n">01</span><h2>Objetivo e método</h2></div>
+    <div class="grid2">
+      <div class="box"><h3>Objetivo</h3><p>Verificar se o eleitor consegue, sozinho, encontrar informações e usar os recursos do guia; identificar pontos de confusão; medir a experiência percebida (UEQ). Não é teste de conhecimento do participante — é teste da interface.</p></div>
+      <div class="box"><h3>Método</h3><p>Teste moderado com <b>"pensar em voz alta"</b> (think-aloud). Presencial ou remoto (compartilhando a tela). ~30–40 min por pessoa. Com consentimento, gravar tela/áudio. O facilitador observa, não ajuda (salvo travamento total).</p></div>
+      <div class="box"><h3>Participantes (5–8)</h3><p>Amostra diversa de eleitores do PR. Recomendado incluir: 2+ pessoas <b>idosas</b> (público-foco), 1+ que <b>nunca usou</b> o guia, 1 usuário de <b>leitor de tela / baixa visão</b> (valida a acessibilidade). Faixas de idade e escolaridade variadas.</p></div>
+      <div class="box"><h3>Materiais</h3><p>Um aparelho (de preferência <b>celular</b> — o guia é mobile-first), acesso a <code>guiaeleitorpr.sorttie.com.br</code>, este roteiro, a ficha de coleta e o formulário UEQ (impresso ou digital). Cronômetro.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="shead"><span class="n">02</span><h2>Antes de começar (facilitador)</h2></div>
+    <ol class="steps">
+      <li>Apresente-se e explique: "Estamos testando o <b>site</b>, não você. Não existe resposta errada; se travar, é problema nosso para corrigir."</li>
+      <li>Peça para <b>pensar em voz alta</b> — dizer o que procura, o que espera, o que confunde.</li>
+      <li>Colha o <b>consentimento</b> (seção 05) antes de qualquer gravação.</li>
+      <li>Abra o guia numa tela limpa e deixe a pessoa explorar 30s livremente antes da 1ª tarefa.</li>
+      <li>Não conduza ("clique ali") — se pedir ajuda, responda "o que você faria?".</li>
+    </ol>
+  </section>
+
+  <section>
+    <div class="shead"><span class="n">03</span><h2>Roteiro de tarefas</h2></div>
+    <p class="lead">Leia o cenário em voz alta. Marque <b>sucesso</b> (fez sozinho), <b>com dificuldade</b> (fez mas hesitou/errou o caminho) ou <b>falha</b> (não conseguiu). Anote tempo e onde travou. Ao fim de cada tarefa, pergunte o <b>SEQ</b>: "de 1 (muito difícil) a 7 (muito fácil), como foi?".</p>
+    <div class="tasks">
+      <div class="task"><h3>Encontrar um candidato e ver a situação da candidatura <span class="tag">busca</span></h3><div class="cen">"Você quer conferir um candidato específico. Encontre-o pelo nome e diga se a candidatura dele está <i>deferida</i> (aprovada) ou não."</div><div class="meta"><b>Sucesso:</b> usa a busca, abre o perfil e lê o selo de situação. · <b>Observar:</b> acha o campo de busca? entende o selo/cor?</div></div>
+      <div class="task"><h3>Patrimônio e histórico <span class="tag">perfil</span></h3><div class="cen">"Nesse mesmo candidato, descubra quanto patrimônio ele declarou e se já foi eleito antes."</div><div class="meta"><b>Sucesso:</b> localiza patrimônio e o histórico eleitoral (com votos, se houver). · <b>Observar:</b> rola o perfil? entende os valores/datas?</div></div>
+      <div class="task"><h3>Filtrar por cargo + bandeira <span class="tag">filtro</span></h3><div class="cen">"Você se interessa por <b>Saúde</b>. Veja os candidatos a <b>deputado estadual</b> que têm essa bandeira."</div><div class="meta"><b>Sucesso:</b> seleciona a aba do cargo e a bandeira Saúde. · <b>Observar:</b> entende que a aba define o escopo? acha as bandeiras?</div></div>
+      <div class="task"><h3>Mapa de origem <span class="tag">mapa</span></h3><div class="cen">"Use o mapa para ver candidatos nascidos em uma cidade que te interessa."</div><div class="meta"><b>Sucesso:</b> toca numa cidade e vê a lista filtrar. · <b>Observar:</b> percebe que o mapa é clicável?</div></div>
+      <div class="task"><h3>Montar a "Minha Cola" <span class="tag">cola</span></h3><div class="cen">"Escolha um candidato a presidente para levar como lembrete no dia da votação e salve na sua cola."</div><div class="meta"><b>Sucesso:</b> adiciona à cola (★) e abre/salva a cola. · <b>Observar:</b> encontra o botão salvar? entende para que serve a cola?</div></div>
+      <div class="task"><h3>Onde eu voto <span class="tag">serviço</span></h3><div class="cen">"Você não lembra seu local de votação. Descubra como consultar."</div><div class="meta"><b>Sucesso:</b> acha o botão "Onde eu voto" e entende que leva ao serviço oficial do TSE. · <b>Observar:</b> percebe que é link externo?</div></div>
+      <div class="task"><h3>Acessibilidade <span class="tag">a11y</span></h3><div class="cen">"Imagine que precisa de letras maiores ou de ouvir a descrição de um candidato. Ative esse recurso."</div><div class="meta"><b>Sucesso:</b> abre a barra ♿ e usa texto+/áudio/contraste. · <b>Observar:</b> encontra o botão de acessibilidade?</div></div>
+      <div class="task"><h3>Confiança na fonte <span class="tag">transparência</span></h3><div class="cen">"De onde vêm essas informações? Encontre no site quem fornece os dados."</div><div class="meta"><b>Sucesso:</b> localiza a nota de fontes (rodapé/‘sobre’). · <b>Observar:</b> a pessoa confia? entende que é apartidário e oficial?</div></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="shead"><span class="n">04</span><h2>UEQ — Questionário de Experiência do Usuário</h2></div>
+    <p class="lead">Aplique ao <b>final</b> da sessão. O UEQ é um instrumento validado (Laugwitz, Held &amp; Schrepp) com 26 pares de opostos; a pessoa marca de <b>1 a 7</b> o quanto se aproxima de cada lado (4 = neutro). Peça resposta espontânea, sem pensar demais. As colunas da direita indicam a dimensão (não mostrar ao participante).</p>
+    <div class="tblwrap"><table>
+      <thead><tr><th>Polo esquerdo (1)</th><th>1–7</th><th>Polo direito (7)</th><th>dimensão</th></tr></thead>
+      <tbody>
+        <tr><td class="pole">Incômodo</td><td class="scale">◯◯◯◯◯◯◯</td><td class="pole">Agradável</td><td class="dim">atrativ.</td></tr>
+        <tr><td class="pole">Incompreensível</td><td class="scale">◯◯◯◯◯◯◯</td><td class="pole">Compreensível</td><td class="dim">clareza</td></tr>
+        <tr><td class="pole">Criativo</td><td class="scale">◯◯◯◯◯◯◯</td><td class="pole">Sem imaginação</td><td class="dim">novidade</td></tr>
+        <tr><td class="pole">Fácil de aprender</td><td class="scale">◯◯◯◯◯◯◯</td><td class="pole">Difícil de aprender</td><td class="dim">clareza</td></tr>
+        <tr><td class="pole">Valioso</td><td class="scale">◯◯◯◯◯◯◯</td><td class="pole">Sem valor</td><td class="dim">estímulo</td></tr>
+        <tr><td class="pole">Chato</td><td class="scale">◯◯◯◯◯◯◯</td><td class="pole">Empolgante</td><td class="dim">estímulo</td></tr>
+        <tr><td class="pole">Desinteressante</td><td class="scale">◯◯◯◯◯◯◯</td><td class="pole">Interessante</td><td class="dim">estímulo</td></tr>
+        <tr><td class="pole">Imprevisível</td><td class="scale">◯◯◯◯◯◯◯</td><td class="pole">Previsível</td><td class="dim">precisão</td></tr>
+        <tr><td class="pole">Rápido</td><td class="scale">◯◯◯◯◯◯◯</td><td class="pole">Lento</td><td class="dim">eficiência</td></tr>
+        <tr><td class="pole">Inventivo</td><td class="scale">◯◯◯◯◯◯◯</td><td class="pole">Convencional</td><td class="dim">novidade</td></tr>
+        <tr><td class="pole">Atrapalha</td><td class="scale">◯◯◯◯◯◯◯</td><td class="pole">Dá suporte</td><td class="dim">precisão</td></tr>
+        <tr><td class="pole">Bom</td><td class="scale">◯◯◯◯◯◯◯</td><td class="pole">Ruim</td><td class="dim">atrativ.</td></tr>
+        <tr><td class="pole">Complicado</td><td class="scale">◯◯◯◯◯◯◯</td><td class="pole">Fácil</td><td class="dim">clareza</td></tr>
+        <tr><td class="pole">Repulsivo</td><td class="scale">◯◯◯◯◯◯◯</td><td class="pole">Cativante</td><td class="dim">atrativ.</td></tr>
+        <tr><td class="pole">Comum</td><td class="scale">◯◯◯◯◯◯◯</td><td class="pole">Na vanguarda</td><td class="dim">novidade</td></tr>
+        <tr><td class="pole">Desagradável</td><td class="scale">◯◯◯◯◯◯◯</td><td class="pole">Agradável</td><td class="dim">atrativ.</td></tr>
+        <tr><td class="pole">Seguro</td><td class="scale">◯◯◯◯◯◯◯</td><td class="pole">Inseguro</td><td class="dim">precisão</td></tr>
+        <tr><td class="pole">Motivador</td><td class="scale">◯◯◯◯◯◯◯</td><td class="pole">Desmotivador</td><td class="dim">estímulo</td></tr>
+        <tr><td class="pole">Corresponde às expectativas</td><td class="scale">◯◯◯◯◯◯◯</td><td class="pole">Não corresponde</td><td class="dim">precisão</td></tr>
+        <tr><td class="pole">Ineficiente</td><td class="scale">◯◯◯◯◯◯◯</td><td class="pole">Eficiente</td><td class="dim">eficiência</td></tr>
+        <tr><td class="pole">Claro</td><td class="scale">◯◯◯◯◯◯◯</td><td class="pole">Confuso</td><td class="dim">clareza</td></tr>
+        <tr><td class="pole">Impraticável</td><td class="scale">◯◯◯◯◯◯◯</td><td class="pole">Prático</td><td class="dim">eficiência</td></tr>
+        <tr><td class="pole">Organizado</td><td class="scale">◯◯◯◯◯◯◯</td><td class="pole">Desordenado</td><td class="dim">eficiência</td></tr>
+        <tr><td class="pole">Atraente</td><td class="scale">◯◯◯◯◯◯◯</td><td class="pole">Sem graça</td><td class="dim">atrativ.</td></tr>
+        <tr><td class="pole">Simpático</td><td class="scale">◯◯◯◯◯◯◯</td><td class="pole">Antipático</td><td class="dim">atrativ.</td></tr>
+        <tr><td class="pole">Conservador</td><td class="scale">◯◯◯◯◯◯◯</td><td class="pole">Inovador</td><td class="dim">novidade</td></tr>
+      </tbody>
+    </table></div>
+    <p class="note" style="margin-top:14px"><b>Pontuação:</b> o UEQ oferece uma planilha oficial gratuita (Data Analysis Tool) que calcula as 6 dimensões — <b>Atratividade, Clareza, Eficiência, Precisão (confiabilidade), Estímulo e Novidade</b> — em escala de −3 a +3, com <i>benchmark</i>. Baixe a planilha e o questionário canônico em <b>ueq-online.org</b>, cole as respostas e gere o gráfico. Dimensões: as 6 dão a "temperatura" da experiência; valores &gt; +0,8 são positivos.</p>
+  </section>
+
+  <section>
+    <div class="shead"><span class="n">05</span><h2>Termo de consentimento (modelo)</h2></div>
+    <div class="note">
+      Participo voluntariamente de um teste de usabilidade do <b>Guia Eleitor PR</b>, iniciativa não comercial da Sorttie. Entendo que: (1) o objetivo é avaliar o <b>site</b>, não a mim; (2) posso <b>desistir a qualquer momento</b>, sem justificativa; (3) a sessão poderá ser <b>gravada (tela e/ou áudio)</b> apenas para análise interna; (4) minhas respostas serão usadas de forma <b>anônima e agregada</b>, sem me identificar; (5) <b>nenhum dado pessoal sensível</b> é coletado ou publicado. &nbsp; Nome: ______________________ · Assinatura/OK verbal: ______ · Data: ___/___/____ · Autoriza gravação? ( ) Sim ( ) Não
+    </div>
+  </section>
+
+  <section>
+    <div class="shead"><span class="n">06</span><h2>Ficha de coleta e como reportar</h2></div>
+    <div class="tblwrap"><table>
+      <thead><tr><th>Tarefa</th><th>Resultado</th><th>Tempo</th><th>SEQ (1–7)</th><th>Onde travou / observações</th></tr></thead>
+      <tbody>
+        <tr><td>T1 Busca + situação</td><td>✔ / △ / ✗</td><td>—</td><td>—</td><td></td></tr>
+        <tr><td>T2 Patrimônio/histórico</td><td>✔ / △ / ✗</td><td>—</td><td>—</td><td></td></tr>
+        <tr><td>T3 Filtro cargo+bandeira</td><td>✔ / △ / ✗</td><td>—</td><td>—</td><td></td></tr>
+        <tr><td>T4 Mapa</td><td>✔ / △ / ✗</td><td>—</td><td>—</td><td></td></tr>
+        <tr><td>T5 Minha Cola</td><td>✔ / △ / ✗</td><td>—</td><td>—</td><td></td></tr>
+        <tr><td>T6 Onde eu voto</td><td>✔ / △ / ✗</td><td>—</td><td>—</td><td></td></tr>
+        <tr><td>T7 Acessibilidade</td><td>✔ / △ / ✗</td><td>—</td><td>—</td><td></td></tr>
+        <tr><td>T8 Fonte/confiança</td><td>✔ / △ / ✗</td><td>—</td><td>—</td><td></td></tr>
+      </tbody>
+    </table></div>
+    <p class="lead" style="margin-top:14px"><b>Relatório final</b> (1–2 páginas): taxa de sucesso por tarefa (% ✔), SEQ médio por tarefa, as 6 dimensões do UEQ (gráfico), os <b>3–5 problemas mais recorrentes</b> priorizados por severidade, e as correções propostas. Guarde as fichas anônimas como evidência de replicabilidade/qualidade.</p>
+  </section>
+
+  <footer>
+    <p>Kit de teste de usabilidade do Guia Eleitor PR — Sorttie · iniciativa não comercial e apartidária. UEQ © Laugwitz, Held &amp; Schrepp — questionário e ferramenta de análise em ueq-online.org (uso livre para pesquisa e produto).</p>
+  </footer>
+</div>
