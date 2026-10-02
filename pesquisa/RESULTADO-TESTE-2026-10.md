@@ -52,16 +52,14 @@ Todas as médias e intervalos ficaram acima do neutro (0). Com 11 participantes 
 
 **8 de 8 problemas corrigidos (100%)**, testados e publicados em 2 de outubro de 2026.
 
-| Problema | Evidência | Mudança no guia (publicada em 02/10/2026) |
-|---|---|---|
-| "Onde eu voto" escondido dentro da Minha Cola | 3 não conseguiram; SEQ 5,0 | Atalho no topo da página para o serviço do TSE; explicação no campo de endereço da Minha Cola |
-| Acessibilidade só como ícone | 2 não conseguiram | Botão com texto "Acessibilidade" no topo |
-| Como salvar candidatos na Minha Cola | 1 não conseguiu, 1 com dificuldade | Orientação para salvar pela ficha do candidato; "Salvar imagem" passou a "Baixar imagem"; botão "Na minha cola" com mais contraste |
-| Abertura longa, fonte dos dados difícil de achar | 1 não conseguiu | Abertura enxuta, "Como usar" recolhível e atalho "De onde vêm os dados?" |
-| Página rolava ao escolher o cargo | comentário de participante | As abas de cargo do topo não rolam mais a página |
-| Filtros longe da lista ao rolar | comentário de participante | Barra fixa com abas de cargo, busca, contagem e filtros ativos removíveis |
-| Cidade do mapa invisível depois de escolhida | 2 com dificuldade no mapa | Indicação "Nascidos em [cidade]" removível e aviso no mapa com o total |
-| Filtros pareciam travar | comentário de participante | Com uma cidade escolhida, as abas de cargo não respondiam; agora filtram dentro da cidade |
+1. "Onde eu voto" escondido → atalho no topo da página para o serviço do TSE
+2. Acessibilidade só como ícone → botão com texto "Acessibilidade" no topo
+3. Dúvida sobre como salvar na Minha Cola → orientação para salvar pela ficha do candidato e botão "Baixar imagem"
+4. Abertura longa → texto enxuto, "Como usar" recolhível e atalho "De onde vêm os dados?"
+5. Página rolava ao escolher o cargo → abas do topo não rolam mais a página
+6. Filtros longe da lista → barra fixa de filtros ao rolar
+7. Cidade do mapa invisível depois de escolhida → indicação "Nascidos em [cidade]" removível
+8. Filtros pareciam travar → abas de cargo funcionam com uma cidade escolhida
 
 ## Limitações
 
