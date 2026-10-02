@@ -1,0 +1,1340 @@
+[
+ {
+  "pi": 0,
+  "nome": "LULA",
+  "cargo": "Presidente",
+  "part": "PT",
+  "antes": [
+   "social",
+   "economia",
+   "educacao",
+   "saude",
+   "seguranca"
+  ],
+  "origAntes": "site",
+  "depois": [
+   "saude",
+   "educacao",
+   "seguranca",
+   "economia",
+   "agro",
+   "social",
+   "trabalho",
+   "infra",
+   "inovacao",
+   "ambiente",
+   "transparencia",
+   "cultura",
+   "inclusao",
+   "moradia",
+   "mobilidade",
+   "esporte",
+   "juventude",
+   "animal"
+  ],
+  "ev": {
+   "saude": "11 termos · 75 ocorrências",
+   "educacao": "9 termos · 106 ocorrências",
+   "seguranca": "9 termos · 83 ocorrências",
+   "economia": "9 termos · 211 ocorrências",
+   "agro": "10 termos · 83 ocorrências",
+   "social": "17 termos · 174 ocorrências",
+   "trabalho": "4 termos · 22 ocorrências",
+   "infra": "5 termos · 79 ocorrências",
+   "inovacao": "9 termos · 129 ocorrências",
+   "ambiente": "11 termos · 164 ocorrências",
+   "transparencia": "4 termos · 23 ocorrências",
+   "cultura": "6 termos · 107 ocorrências",
+   "inclusao": "5 termos · 23 ocorrências",
+   "moradia": "3 termos · 16 ocorrências",
+   "mobilidade": "4 termos · 13 ocorrências",
+   "esporte": "6 termos · 24 ocorrências",
+   "juventude": "4 termos · 27 ocorrências",
+   "animal": "3 termos · 6 ocorrências"
+  },
+  "fonte": "Plano de governo registrado no TSE (84 págs.)",
+  "arquivos": [
+   "0806JOB838PTlivroplanodegovernocompressed.pdf"
+  ],
+  "notas": []
+ },
+ {
+  "pi": 1,
+  "nome": "FLAVIO BOLSONARO",
+  "cargo": "Presidente",
+  "part": "PL",
+  "antes": [
+   "seguranca",
+   "saude",
+   "social",
+   "economia"
+  ],
+  "origAntes": "site",
+  "depois": [
+   "saude",
+   "educacao",
+   "seguranca",
+   "economia",
+   "agro",
+   "social",
+   "trabalho",
+   "infra",
+   "inovacao",
+   "ambiente",
+   "transparencia",
+   "cultura",
+   "inclusao",
+   "moradia",
+   "mobilidade",
+   "esporte",
+   "juventude"
+  ],
+  "ev": {
+   "saude": "6 termos · 47 ocorrências",
+   "educacao": "9 termos · 99 ocorrências",
+   "seguranca": "10 termos · 61 ocorrências",
+   "economia": "9 termos · 116 ocorrências",
+   "agro": "7 termos · 43 ocorrências",
+   "social": "10 termos · 39 ocorrências",
+   "trabalho": "3 termos · 25 ocorrências",
+   "infra": "6 termos · 44 ocorrências",
+   "inovacao": "11 termos · 96 ocorrências",
+   "ambiente": "9 termos · 65 ocorrências",
+   "transparencia": "6 termos · 32 ocorrências",
+   "cultura": "5 termos · 14 ocorrências",
+   "inclusao": "5 termos · 12 ocorrências",
+   "moradia": "5 termos · 20 ocorrências",
+   "mobilidade": "4 termos · 13 ocorrências",
+   "esporte": "5 termos · 23 ocorrências",
+   "juventude": "4 termos · 29 ocorrências"
+  },
+  "fonte": "Plano de governo registrado no TSE (76 págs.)",
+  "arquivos": [
+   "DiretrizesPlanodeGovernoFlavioBolsonaro20272030versaofinal.pdf"
+  ],
+  "notas": []
+ },
+ {
+  "pi": 2,
+  "nome": "ZEMA",
+  "cargo": "Presidente",
+  "part": "NOVO",
+  "antes": [
+   "economia"
+  ],
+  "origAntes": "ocupação",
+  "depois": [
+   "saude",
+   "educacao",
+   "seguranca",
+   "economia",
+   "agro",
+   "social",
+   "trabalho",
+   "infra",
+   "inovacao",
+   "ambiente",
+   "transparencia",
+   "cultura",
+   "inclusao",
+   "moradia",
+   "mobilidade",
+   "esporte",
+   "juventude"
+  ],
+  "ev": {
+   "saude": "7 termos · 59 ocorrências",
+   "educacao": "9 termos · 132 ocorrências",
+   "seguranca": "9 termos · 67 ocorrências",
+   "economia": "10 termos · 139 ocorrências",
+   "agro": "8 termos · 36 ocorrências",
+   "social": "7 termos · 38 ocorrências",
+   "trabalho": "4 termos · 19 ocorrências",
+   "infra": "6 termos · 76 ocorrências",
+   "inovacao": "9 termos · 80 ocorrências",
+   "ambiente": "9 termos · 78 ocorrências",
+   "transparencia": "5 termos · 44 ocorrências",
+   "cultura": "5 termos · 50 ocorrências",
+   "inclusao": "3 termos · 5 ocorrências",
+   "moradia": "4 termos · 14 ocorrências",
+   "mobilidade": "3 termos · 4 ocorrências",
+   "esporte": "4 termos · 39 ocorrências",
+   "juventude": "2 termos · 5 ocorrências"
+  },
+  "fonte": "Plano de governo registrado no TSE (81 págs.)",
+  "arquivos": [
+   "planogoverno10120.pdf"
+  ],
+  "notas": []
+ },
+ {
+  "pi": 3,
+  "nome": "RONALDO CAIADO",
+  "cargo": "Presidente",
+  "part": "PSD",
+  "antes": [
+   "saude",
+   "agro",
+   "seguranca",
+   "economia",
+   "transparencia"
+  ],
+  "origAntes": "site",
+  "depois": [
+   "saude",
+   "educacao",
+   "seguranca",
+   "economia",
+   "agro",
+   "social",
+   "trabalho",
+   "infra",
+   "inovacao",
+   "ambiente",
+   "transparencia",
+   "cultura",
+   "inclusao",
+   "moradia",
+   "mobilidade",
+   "esporte",
+   "juventude"
+  ],
+  "ev": {
+   "saude": "13 termos · 260 ocorrências",
+   "educacao": "10 termos · 225 ocorrências",
+   "seguranca": "9 termos · 170 ocorrências",
+   "economia": "10 termos · 288 ocorrências",
+   "agro": "10 termos · 81 ocorrências",
+   "social": "11 termos · 138 ocorrências",
+   "trabalho": "3 termos · 21 ocorrências",
+   "infra": "8 termos · 161 ocorrências",
+   "inovacao": "11 termos · 330 ocorrências",
+   "ambiente": "12 termos · 173 ocorrências",
+   "transparencia": "6 termos · 84 ocorrências",
+   "cultura": "7 termos · 95 ocorrências",
+   "inclusao": "4 termos · 36 ocorrências",
+   "moradia": "5 termos · 28 ocorrências",
+   "mobilidade": "7 termos · 43 ocorrências",
+   "esporte": "6 termos · 72 ocorrências",
+   "juventude": "5 termos · 22 ocorrências"
+  },
+  "fonte": "Plano de governo registrado no TSE (100 págs.)",
+  "arquivos": [
+   "Plano de Governo Ronaldo Caiado Presidente.pdf"
+  ],
+  "notas": []
+ },
+ {
+  "pi": 4,
+  "nome": "ESCRITOR AUGUSTO CURY",
+  "cargo": "Presidente",
+  "part": "AVANTE",
+  "antes": [
+   "economia",
+   "social",
+   "saude",
+   "transparencia"
+  ],
+  "origAntes": "site",
+  "depois": [
+   "saude",
+   "educacao",
+   "seguranca",
+   "economia",
+   "agro",
+   "social",
+   "trabalho",
+   "infra",
+   "inovacao",
+   "ambiente",
+   "transparencia",
+   "cultura",
+   "inclusao",
+   "moradia",
+   "mobilidade",
+   "juventude"
+  ],
+  "ev": {
+   "saude": "9 termos · 308 ocorrências",
+   "educacao": "8 termos · 642 ocorrências",
+   "seguranca": "11 termos · 253 ocorrências",
+   "economia": "12 termos · 737 ocorrências",
+   "agro": "11 termos · 334 ocorrências",
+   "social": "10 termos · 206 ocorrências",
+   "trabalho": "5 termos · 32 ocorrências",
+   "infra": "9 termos · 146 ocorrências",
+   "inovacao": "9 termos · 586 ocorrências",
+   "ambiente": "11 termos · 238 ocorrências",
+   "transparencia": "7 termos · 102 ocorrências",
+   "cultura": "7 termos · 166 ocorrências",
+   "inclusao": "5 termos · 60 ocorrências",
+   "moradia": "3 termos · 22 ocorrências",
+   "mobilidade": "2 termos · 6 ocorrências",
+   "juventude": "5 termos · 144 ocorrências"
+  },
+  "fonte": "Plano de governo registrado no TSE (400 págs.)",
+  "arquivos": [
+   "pje-Plano de Governo - O BRASIL DOS NOSSOS SONHOS .pdf",
+   "PLANO DE GOVERNOO BRASIL DOS NOSSOS SONHOS.pdf"
+  ],
+  "notas": []
+ },
+ {
+  "pi": 5,
+  "nome": "SAMARA",
+  "cargo": "Presidente",
+  "part": "UP",
+  "antes": [
+   "saude"
+  ],
+  "origAntes": "ocupação",
+  "depois": [
+   "saude",
+   "educacao",
+   "seguranca",
+   "economia",
+   "agro",
+   "social",
+   "trabalho",
+   "infra",
+   "inovacao",
+   "ambiente",
+   "transparencia",
+   "cultura",
+   "inclusao",
+   "moradia",
+   "mobilidade",
+   "esporte",
+   "juventude"
+  ],
+  "ev": {
+   "saude": "8 termos · 164 ocorrências",
+   "educacao": "8 termos · 236 ocorrências",
+   "seguranca": "11 termos · 164 ocorrências",
+   "economia": "7 termos · 132 ocorrências",
+   "agro": "7 termos · 51 ocorrências",
+   "social": "13 termos · 268 ocorrências",
+   "trabalho": "6 termos · 249 ocorrências",
+   "infra": "7 termos · 67 ocorrências",
+   "inovacao": "2 termos · 34 ocorrências",
+   "ambiente": "8 termos · 95 ocorrências",
+   "transparencia": "4 termos · 44 ocorrências",
+   "cultura": "6 termos · 124 ocorrências",
+   "inclusao": "4 termos · 10 ocorrências",
+   "moradia": "5 termos · 62 ocorrências",
+   "mobilidade": "4 termos · 25 ocorrências",
+   "esporte": "5 termos · 51 ocorrências",
+   "juventude": "3 termos · 85 ocorrências"
+  },
+  "fonte": "Plano de governo registrado no TSE (67 págs.)",
+  "arquivos": [
+   "pje-ProgramaSAMARA_02 (1).pdf"
+  ],
+  "notas": []
+ },
+ {
+  "pi": 6,
+  "nome": "RENAN SANTOS",
+  "cargo": "Presidente",
+  "part": "MISSÃO",
+  "antes": [
+   "economia",
+   "transparencia",
+   "juventude",
+   "cultura"
+  ],
+  "origAntes": "site",
+  "depois": [
+   "saude",
+   "educacao",
+   "seguranca",
+   "economia",
+   "agro",
+   "social",
+   "trabalho",
+   "infra",
+   "inovacao",
+   "ambiente",
+   "transparencia",
+   "cultura",
+   "inclusao",
+   "moradia",
+   "juventude"
+  ],
+  "ev": {
+   "saude": "5 termos · 39 ocorrências",
+   "educacao": "9 termos · 97 ocorrências",
+   "seguranca": "8 termos · 75 ocorrências",
+   "economia": "7 termos · 66 ocorrências",
+   "agro": "7 termos · 24 ocorrências",
+   "social": "6 termos · 18 ocorrências",
+   "trabalho": "3 termos · 4 ocorrências",
+   "infra": "8 termos · 49 ocorrências",
+   "inovacao": "7 termos · 68 ocorrências",
+   "ambiente": "8 termos · 28 ocorrências",
+   "transparencia": "6 termos · 9 ocorrências",
+   "cultura": "6 termos · 64 ocorrências",
+   "inclusao": "2 termos · 3 ocorrências",
+   "moradia": "4 termos · 9 ocorrências",
+   "juventude": "3 termos · 6 ocorrências"
+  },
+  "fonte": "Plano de governo registrado no TSE (51 págs.)",
+  "arquivos": [
+   "Plano de Governo Missao 2026  Finalcompressed.pdf"
+  ],
+  "notas": []
+ },
+ {
+  "pi": 7,
+  "nome": "VETERINÁRIO WILSON GRASSI",
+  "cargo": "Presidente",
+  "part": "DEMOCRATA",
+  "antes": [
+   "saude"
+  ],
+  "origAntes": "ocupação",
+  "depois": [
+   "saude",
+   "educacao",
+   "seguranca",
+   "economia",
+   "agro",
+   "social",
+   "trabalho",
+   "infra",
+   "inovacao",
+   "ambiente",
+   "transparencia",
+   "moradia",
+   "esporte",
+   "animal"
+  ],
+  "ev": {
+   "saude": "6 termos · 36 ocorrências",
+   "educacao": "6 termos · 46 ocorrências",
+   "seguranca": "8 termos · 57 ocorrências",
+   "economia": "9 termos · 72 ocorrências",
+   "agro": "6 termos · 12 ocorrências",
+   "social": "4 termos · 13 ocorrências",
+   "trabalho": "5 termos · 28 ocorrências",
+   "infra": "6 termos · 12 ocorrências",
+   "inovacao": "2 termos · 3 ocorrências",
+   "ambiente": "5 termos · 25 ocorrências",
+   "transparencia": "4 termos · 23 ocorrências",
+   "moradia": "5 termos · 24 ocorrências",
+   "esporte": "4 termos · 30 ocorrências",
+   "animal": "2 termos · 13 ocorrências"
+  },
+  "fonte": "Plano de governo registrado no TSE (58 págs.)",
+  "arquivos": [
+   "Brasil em Primeiro Lugar.pdf"
+  ],
+  "notas": []
+ },
+ {
+  "pi": 8,
+  "nome": "HERTZ DIAS",
+  "cargo": "Presidente",
+  "part": "PSTU",
+  "antes": [
+   "educacao"
+  ],
+  "origAntes": "ocupação",
+  "depois": [
+   "saude",
+   "educacao",
+   "seguranca",
+   "economia",
+   "agro",
+   "social",
+   "trabalho",
+   "infra",
+   "inovacao",
+   "ambiente",
+   "transparencia",
+   "cultura",
+   "inclusao",
+   "moradia",
+   "mobilidade",
+   "juventude"
+  ],
+  "ev": {
+   "saude": "5 termos · 23 ocorrências",
+   "educacao": "7 termos · 64 ocorrências",
+   "seguranca": "8 termos · 82 ocorrências",
+   "economia": "7 termos · 37 ocorrências",
+   "agro": "6 termos · 44 ocorrências",
+   "social": "10 termos · 88 ocorrências",
+   "trabalho": "4 termos · 207 ocorrências",
+   "infra": "6 termos · 29 ocorrências",
+   "inovacao": "5 termos · 23 ocorrências",
+   "ambiente": "7 termos · 38 ocorrências",
+   "transparencia": "3 termos · 9 ocorrências",
+   "cultura": "2 termos · 7 ocorrências",
+   "inclusao": "5 termos · 5 ocorrências",
+   "moradia": "2 termos · 19 ocorrências",
+   "mobilidade": "4 termos · 10 ocorrências",
+   "juventude": "2 termos · 7 ocorrências"
+  },
+  "fonte": "Plano de governo registrado no TSE (33 págs.)",
+  "arquivos": [
+   "Programa PSTU Eleições 2026.pdf"
+  ],
+  "notas": []
+ },
+ {
+  "pi": 9,
+  "nome": "EDMILSON COSTA",
+  "cargo": "Presidente",
+  "part": "PCB",
+  "antes": [
+   "trabalho",
+   "social",
+   "agro",
+   "juventude"
+  ],
+  "origAntes": "site",
+  "depois": [
+   "saude",
+   "educacao",
+   "seguranca",
+   "economia",
+   "agro",
+   "social",
+   "trabalho",
+   "infra",
+   "ambiente",
+   "cultura",
+   "inclusao",
+   "moradia",
+   "juventude"
+  ],
+  "ev": {
+   "saude": "4 termos · 14 ocorrências",
+   "educacao": "6 termos · 41 ocorrências",
+   "seguranca": "2 termos · 8 ocorrências",
+   "economia": "4 termos · 27 ocorrências",
+   "agro": "7 termos · 14 ocorrências",
+   "social": "10 termos · 45 ocorrências",
+   "trabalho": "2 termos · 51 ocorrências",
+   "infra": "4 termos · 14 ocorrências",
+   "ambiente": "7 termos · 35 ocorrências",
+   "cultura": "4 termos · 30 ocorrências",
+   "inclusao": "2 termos · 5 ocorrências",
+   "moradia": "2 termos · 10 ocorrências",
+   "juventude": "4 termos · 7 ocorrências"
+  },
+  "fonte": "Plano de governo registrado no TSE (16 págs.)",
+  "arquivos": [
+   "Programa Politico do PCB eleicoes 20261.pdf"
+  ],
+  "notas": []
+ },
+ {
+  "pi": 10,
+  "nome": "CLARIANA BARAO",
+  "cargo": "Presidente",
+  "part": "DC",
+  "antes": [],
+  "origAntes": "—",
+  "depois": [
+   "saude",
+   "educacao",
+   "seguranca",
+   "economia",
+   "infra",
+   "inovacao"
+  ],
+  "ev": {
+   "saude": "3 termos · 12 ocorrências",
+   "educacao": "6 termos · 22 ocorrências",
+   "seguranca": "4 termos · 7 ocorrências",
+   "economia": "4 termos · 8 ocorrências",
+   "infra": "2 termos · 4 ocorrências",
+   "inovacao": "8 termos · 14 ocorrências"
+  },
+  "fonte": "Plano de governo registrado no TSE (15 págs.)",
+  "arquivos": [
+   "PLANO DE GOVERNO.pdf"
+  ],
+  "notas": []
+ },
+ {
+  "pi": 11,
+  "nome": "RUI COSTA PIMENTA",
+  "cargo": "Presidente",
+  "part": "PCO",
+  "antes": [
+   "trabalho",
+   "social",
+   "agro",
+   "economia"
+  ],
+  "origAntes": "site",
+  "depois": [
+   "saude",
+   "educacao",
+   "seguranca",
+   "economia",
+   "social",
+   "trabalho",
+   "infra",
+   "cultura",
+   "moradia",
+   "esporte",
+   "juventude"
+  ],
+  "ev": {
+   "saude": "4 termos · 12 ocorrências",
+   "educacao": "6 termos · 28 ocorrências",
+   "seguranca": "5 termos · 7 ocorrências",
+   "economia": "2 termos · 5 ocorrências",
+   "social": "3 termos · 3 ocorrências",
+   "trabalho": "5 termos · 55 ocorrências",
+   "infra": "2 termos · 2 ocorrências",
+   "cultura": "2 termos · 6 ocorrências",
+   "moradia": "2 termos · 5 ocorrências",
+   "esporte": "2 termos · 3 ocorrências",
+   "juventude": "2 termos · 2 ocorrências"
+  },
+  "fonte": "Plano de governo registrado no TSE (7 págs.)",
+  "arquivos": [
+   "PCOprogramadegoverno2026.pdf"
+  ],
+  "notas": []
+ },
+ {
+  "pi": 12,
+  "nome": "PABLO MARÇAL",
+  "cargo": "Presidente",
+  "part": "PRTB",
+  "antes": [
+   "economia"
+  ],
+  "origAntes": "ocupação",
+  "depois": [
+   "saude",
+   "educacao",
+   "seguranca",
+   "economia",
+   "agro",
+   "social",
+   "trabalho",
+   "infra",
+   "inovacao",
+   "ambiente",
+   "transparencia",
+   "cultura",
+   "inclusao",
+   "moradia"
+  ],
+  "ev": {
+   "saude": "3 termos · 9 ocorrências",
+   "educacao": "9 termos · 28 ocorrências",
+   "seguranca": "4 termos · 6 ocorrências",
+   "economia": "10 termos · 44 ocorrências",
+   "agro": "3 termos · 7 ocorrências",
+   "social": "7 termos · 12 ocorrências",
+   "trabalho": "2 termos · 3 ocorrências",
+   "infra": "3 termos · 10 ocorrências",
+   "inovacao": "9 termos · 32 ocorrências",
+   "ambiente": "6 termos · 9 ocorrências",
+   "transparencia": "3 termos · 4 ocorrências",
+   "cultura": "2 termos · 9 ocorrências",
+   "inclusao": "2 termos · 2 ocorrências",
+   "moradia": "2 termos · 2 ocorrências"
+  },
+  "fonte": "Plano de governo registrado no TSE (28 págs.)",
+  "arquivos": [
+   "pje-3.  Proposta_Pablo_Marcal.pdf"
+  ],
+  "notas": []
+ },
+ {
+  "pi": 13,
+  "nome": "SAMUEL DE MATTOS",
+  "cargo": "Governador",
+  "part": "PSTU",
+  "antes": [
+   "educacao"
+  ],
+  "origAntes": "ocupação",
+  "depois": [
+   "saude",
+   "educacao",
+   "seguranca",
+   "economia",
+   "agro",
+   "social",
+   "trabalho",
+   "infra",
+   "inovacao",
+   "ambiente",
+   "transparencia",
+   "inclusao",
+   "moradia",
+   "mobilidade",
+   "juventude"
+  ],
+  "ev": {
+   "saude": "9 termos · 53 ocorrências",
+   "educacao": "7 termos · 46 ocorrências",
+   "seguranca": "9 termos · 89 ocorrências",
+   "economia": "8 termos · 35 ocorrências",
+   "agro": "9 termos · 64 ocorrências",
+   "social": "14 termos · 101 ocorrências",
+   "trabalho": "4 termos · 118 ocorrências",
+   "infra": "9 termos · 49 ocorrências",
+   "inovacao": "3 termos · 30 ocorrências",
+   "ambiente": "7 termos · 29 ocorrências",
+   "transparencia": "3 termos · 9 ocorrências",
+   "inclusao": "5 termos · 9 ocorrências",
+   "moradia": "5 termos · 28 ocorrências",
+   "mobilidade": "5 termos · 15 ocorrências",
+   "juventude": "4 termos · 9 ocorrências"
+  },
+  "fonte": "Plano de governo registrado no TSE (14 págs.)",
+  "arquivos": [
+   "ProgramaProntocompressed.pdf"
+  ],
+  "notas": []
+ },
+ {
+  "pi": 14,
+  "nome": "DOUTOR ALEXANDRE SALOMÃO",
+  "cargo": "Governador",
+  "part": "MOBILIZA",
+  "antes": [],
+  "origAntes": "—",
+  "depois": [
+   "saude",
+   "educacao",
+   "seguranca",
+   "economia",
+   "agro",
+   "social",
+   "infra",
+   "inovacao",
+   "ambiente",
+   "transparencia",
+   "cultura",
+   "inclusao"
+  ],
+  "ev": {
+   "saude": "3 termos · 16 ocorrências",
+   "educacao": "10 termos · 71 ocorrências",
+   "seguranca": "6 termos · 38 ocorrências",
+   "economia": "7 termos · 32 ocorrências",
+   "agro": "6 termos · 9 ocorrências",
+   "social": "6 termos · 15 ocorrências",
+   "infra": "4 termos · 7 ocorrências",
+   "inovacao": "2 termos · 7 ocorrências",
+   "ambiente": "3 termos · 4 ocorrências",
+   "transparencia": "4 termos · 11 ocorrências",
+   "cultura": "4 termos · 24 ocorrências",
+   "inclusao": "2 termos · 4 ocorrências"
+  },
+  "fonte": "Plano de governo registrado no TSE (20 págs.)",
+  "arquivos": [
+   "PARANA EM MOVIMENTO.pdf"
+  ],
+  "notas": []
+ },
+ {
+  "pi": 15,
+  "nome": "REQUIÃO FILHO",
+  "cargo": "Governador",
+  "part": "PDT",
+  "antes": [
+   "educacao",
+   "trabalho",
+   "social",
+   "agro",
+   "economia"
+  ],
+  "origAntes": "site",
+  "depois": [
+   "saude",
+   "educacao",
+   "seguranca",
+   "economia",
+   "agro",
+   "social",
+   "trabalho",
+   "infra",
+   "inovacao",
+   "ambiente",
+   "transparencia",
+   "cultura",
+   "inclusao",
+   "moradia",
+   "mobilidade",
+   "esporte",
+   "juventude",
+   "animal"
+  ],
+  "ev": {
+   "saude": "9 termos · 27 ocorrências",
+   "educacao": "8 termos · 37 ocorrências",
+   "seguranca": "6 termos · 17 ocorrências",
+   "economia": "6 termos · 21 ocorrências",
+   "agro": "6 termos · 31 ocorrências",
+   "social": "10 termos · 21 ocorrências",
+   "trabalho": "3 termos · 13 ocorrências",
+   "infra": "6 termos · 33 ocorrências",
+   "inovacao": "4 termos · 18 ocorrências",
+   "ambiente": "6 termos · 21 ocorrências",
+   "transparencia": "3 termos · 11 ocorrências",
+   "cultura": "5 termos · 17 ocorrências",
+   "inclusao": "4 termos · 9 ocorrências",
+   "moradia": "4 termos · 14 ocorrências",
+   "mobilidade": "3 termos · 6 ocorrências",
+   "esporte": "3 termos · 7 ocorrências",
+   "juventude": "2 termos · 4 ocorrências",
+   "animal": "3 termos · 4 ocorrências"
+  },
+  "fonte": "Plano de governo registrado no TSE (15 págs.)",
+  "arquivos": [
+   "pje-RF_PLANO_GOVERNO_2026.pdf"
+  ],
+  "notas": []
+ },
+ {
+  "pi": 16,
+  "nome": "LUIZ FRANÇA",
+  "cargo": "Governador",
+  "part": "MISSÃO",
+  "antes": [
+   "economia",
+   "transparencia"
+  ],
+  "origAntes": "site",
+  "depois": [
+   "saude",
+   "educacao",
+   "seguranca",
+   "economia",
+   "agro",
+   "social",
+   "trabalho",
+   "infra",
+   "inovacao",
+   "ambiente",
+   "transparencia",
+   "cultura",
+   "inclusao",
+   "moradia",
+   "mobilidade",
+   "juventude"
+  ],
+  "ev": {
+   "saude": "7 termos · 34 ocorrências",
+   "educacao": "9 termos · 171 ocorrências",
+   "seguranca": "9 termos · 111 ocorrências",
+   "economia": "8 termos · 163 ocorrências",
+   "agro": "7 termos · 27 ocorrências",
+   "social": "8 termos · 21 ocorrências",
+   "trabalho": "3 termos · 17 ocorrências",
+   "infra": "8 termos · 122 ocorrências",
+   "inovacao": "6 termos · 122 ocorrências",
+   "ambiente": "5 termos · 45 ocorrências",
+   "transparencia": "5 termos · 38 ocorrências",
+   "cultura": "2 termos · 2 ocorrências",
+   "inclusao": "3 termos · 8 ocorrências",
+   "moradia": "3 termos · 17 ocorrências",
+   "mobilidade": "2 termos · 3 ocorrências",
+   "juventude": "2 termos · 3 ocorrências"
+  },
+  "fonte": "Plano de governo registrado no TSE (98 págs.)",
+  "arquivos": [
+   "17854452223604PTXjF3Vm.pdf"
+  ],
+  "notas": []
+ },
+ {
+  "pi": 17,
+  "nome": "SANDRO ALEX",
+  "cargo": "Governador",
+  "part": "PSD",
+  "antes": [],
+  "origAntes": "—",
+  "depois": [
+   "saude",
+   "educacao",
+   "seguranca",
+   "economia",
+   "agro",
+   "social",
+   "trabalho",
+   "infra",
+   "inovacao",
+   "ambiente",
+   "transparencia",
+   "cultura",
+   "inclusao",
+   "moradia",
+   "mobilidade",
+   "esporte",
+   "juventude",
+   "animal"
+  ],
+  "ev": {
+   "saude": "11 termos · 165 ocorrências",
+   "educacao": "10 termos · 430 ocorrências",
+   "seguranca": "9 termos · 85 ocorrências",
+   "economia": "10 termos · 361 ocorrências",
+   "agro": "10 termos · 222 ocorrências",
+   "social": "14 termos · 132 ocorrências",
+   "trabalho": "3 termos · 67 ocorrências",
+   "infra": "11 termos · 415 ocorrências",
+   "inovacao": "11 termos · 486 ocorrências",
+   "ambiente": "11 termos · 374 ocorrências",
+   "transparencia": "5 termos · 66 ocorrências",
+   "cultura": "7 termos · 152 ocorrências",
+   "inclusao": "7 termos · 102 ocorrências",
+   "moradia": "4 termos · 66 ocorrências",
+   "mobilidade": "6 termos · 84 ocorrências",
+   "esporte": "5 termos · 48 ocorrências",
+   "juventude": "4 termos · 45 ocorrências",
+   "animal": "3 termos · 12 ocorrências"
+  },
+  "fonte": "Plano de governo registrado no TSE (274 págs.)",
+  "arquivos": [
+   "Plano de Governo v19compressed.pdf"
+  ],
+  "notas": []
+ },
+ {
+  "pi": 18,
+  "nome": "TAYNÁ MIESSA",
+  "cargo": "Governador",
+  "part": "UP",
+  "antes": [
+   "cultura"
+  ],
+  "origAntes": "ocupação",
+  "depois": [
+   "saude",
+   "educacao",
+   "seguranca",
+   "economia",
+   "agro",
+   "social",
+   "trabalho",
+   "infra",
+   "inovacao",
+   "ambiente",
+   "transparencia",
+   "cultura",
+   "inclusao",
+   "moradia",
+   "mobilidade",
+   "esporte",
+   "juventude"
+  ],
+  "ev": {
+   "saude": "8 termos · 38 ocorrências",
+   "educacao": "7 termos · 79 ocorrências",
+   "seguranca": "8 termos · 44 ocorrências",
+   "economia": "9 termos · 24 ocorrências",
+   "agro": "5 termos · 9 ocorrências",
+   "social": "14 termos · 69 ocorrências",
+   "trabalho": "4 termos · 22 ocorrências",
+   "infra": "4 termos · 6 ocorrências",
+   "inovacao": "2 termos · 7 ocorrências",
+   "ambiente": "4 termos · 7 ocorrências",
+   "transparencia": "3 termos · 7 ocorrências",
+   "cultura": "6 termos · 39 ocorrências",
+   "inclusao": "2 termos · 2 ocorrências",
+   "moradia": "5 termos · 28 ocorrências",
+   "mobilidade": "5 termos · 11 ocorrências",
+   "esporte": "2 termos · 3 ocorrências",
+   "juventude": "3 termos · 9 ocorrências"
+  },
+  "fonte": "Plano de governo registrado no TSE (23 págs.)",
+  "arquivos": [
+   "Plano de Governo  UP.pdf"
+  ],
+  "notas": []
+ },
+ {
+  "pi": 19,
+  "nome": "SERGIO MORO",
+  "cargo": "Governador",
+  "part": "PL",
+  "antes": [
+   "seguranca",
+   "transparencia",
+   "economia",
+   "educacao",
+   "saude",
+   "infra",
+   "agro"
+  ],
+  "origAntes": "site",
+  "depois": [
+   "saude",
+   "educacao",
+   "seguranca",
+   "economia",
+   "agro",
+   "social",
+   "trabalho",
+   "infra",
+   "inovacao",
+   "ambiente",
+   "transparencia",
+   "cultura",
+   "inclusao",
+   "moradia",
+   "mobilidade",
+   "esporte",
+   "juventude"
+  ],
+  "ev": {
+   "saude": "11 termos · 101 ocorrências",
+   "educacao": "10 termos · 203 ocorrências",
+   "seguranca": "10 termos · 109 ocorrências",
+   "economia": "10 termos · 185 ocorrências",
+   "agro": "11 termos · 93 ocorrências",
+   "social": "9 termos · 75 ocorrências",
+   "trabalho": "3 termos · 21 ocorrências",
+   "infra": "11 termos · 146 ocorrências",
+   "inovacao": "11 termos · 216 ocorrências",
+   "ambiente": "9 termos · 113 ocorrências",
+   "transparencia": "8 termos · 86 ocorrências",
+   "cultura": "6 termos · 69 ocorrências",
+   "inclusao": "6 termos · 49 ocorrências",
+   "moradia": "6 termos · 36 ocorrências",
+   "mobilidade": "5 termos · 23 ocorrências",
+   "esporte": "5 termos · 52 ocorrências",
+   "juventude": "5 termos · 24 ocorrências"
+  },
+  "fonte": "Plano de governo registrado no TSE (92 págs.)",
+  "arquivos": [
+   "pje-2026.08.14_Requerimento_Registro_Moro.pdf",
+   "pje-Plano de Governo MORO2026 .pdf"
+  ],
+  "notas": []
+ },
+ {
+  "pi": 20,
+  "nome": "ADRIANO FUNILEIRO",
+  "cargo": "Governador",
+  "part": "PCO",
+  "antes": [
+   "trabalho",
+   "social",
+   "agro",
+   "economia"
+  ],
+  "origAntes": "site",
+  "depois": [
+   "saude",
+   "educacao",
+   "seguranca",
+   "economia",
+   "social",
+   "trabalho",
+   "infra",
+   "cultura",
+   "moradia",
+   "esporte",
+   "juventude"
+  ],
+  "ev": {
+   "saude": "4 termos · 12 ocorrências",
+   "educacao": "6 termos · 28 ocorrências",
+   "seguranca": "5 termos · 7 ocorrências",
+   "economia": "2 termos · 5 ocorrências",
+   "social": "3 termos · 3 ocorrências",
+   "trabalho": "5 termos · 55 ocorrências",
+   "infra": "2 termos · 2 ocorrências",
+   "cultura": "2 termos · 6 ocorrências",
+   "moradia": "2 termos · 5 ocorrências",
+   "esporte": "2 termos · 3 ocorrências",
+   "juventude": "2 termos · 2 ocorrências"
+  },
+  "fonte": "Plano de governo registrado no TSE (7 págs.)",
+  "arquivos": [
+   "PCOprogramadegoverno2026.pdf"
+  ],
+  "notas": []
+ },
+ {
+  "pi": 21,
+  "nome": "CRISTINA GRAEML",
+  "cargo": "Senador",
+  "part": "PSD",
+  "antes": [
+   "cultura"
+  ],
+  "origAntes": "ocupação",
+  "depois": [
+   "agro",
+   "transparencia"
+  ],
+  "decidir": [],
+  "ev": {
+   "agro": "site: 2 termos",
+   "transparencia": "site: 3 termos"
+  },
+  "fonte": "Site declarado ao TSE: cristinagraeml.com.br/",
+  "notas": [
+   "Pautas numeradas no site: 01 Transparência e Liberdade, 02 Força aos Municípios, 03 Voz Feminina e Família, 04 Produção e Desenvolvimento (agronegócio), 05 Cidadania e Participação. 02, 03 e 05 não correspondem a nenhuma das 18 bandeiras."
+  ]
+ },
+ {
+  "pi": 22,
+  "nome": "GLEISI",
+  "cargo": "Senador",
+  "part": "PT",
+  "antes": [
+   "seguranca",
+   "economia",
+   "mobilidade"
+  ],
+  "origAntes": "Senado (top 3)",
+  "depois": [
+   "saude",
+   "educacao",
+   "seguranca",
+   "economia",
+   "agro",
+   "social",
+   "trabalho",
+   "infra",
+   "inovacao",
+   "ambiente",
+   "transparencia",
+   "cultura",
+   "inclusao",
+   "moradia",
+   "mobilidade",
+   "esporte"
+  ],
+  "decidir": [],
+  "ev": {
+   "saude": "site: 3 termos · Câmara: 24 proposições · Senado: 4 proposições",
+   "educacao": "site: 3 termos · Câmara: 12 proposições · Senado: 9 proposições",
+   "seguranca": "site: 2 termos · Câmara: 17 proposições · Senado: 14 proposições",
+   "economia": "Câmara: 21 proposições · Senado: 10 proposições",
+   "agro": "site: 4 termos · Câmara: 10 proposições",
+   "social": "site: 4 termos · Câmara: 11 proposições",
+   "trabalho": "Câmara: 9 proposições · Senado: 3 proposições",
+   "infra": "site: 6 termos · Câmara: 2 proposições · Senado: 3 proposições",
+   "inovacao": "site: 2 termos · Câmara: 2 proposições · Senado: 2 proposições",
+   "ambiente": "site: 2 termos · Câmara: 7 proposições · Senado: 2 proposições",
+   "transparencia": "Câmara: 6 proposições · Senado: 2 proposições",
+   "cultura": "site: 2 termos · Câmara: 6 proposições",
+   "inclusao": "site: 3 termos · Câmara: 7 proposições · Senado: 2 proposições",
+   "moradia": "site: 2 termos",
+   "mobilidade": "Câmara: 2 proposições",
+   "esporte": "Câmara: 2 proposições"
+  },
+  "fonte": "Site declarado ao TSE: gleisi131.com.br/propostasgleisi | Câmara 2019-2026: 215 proposições normativas (PL/PEC/PLP/PDL…) de autoria ou coautoria | Senado 2011-2018: 134 proposições normativas (PL/PEC/PLP/PDL…) de autoria ou coautoria",
+  "notas": [
+   "Sites gleisisenadora.com fora do ar; usado gleisi131.com.br/propostasgleisi."
+  ]
+ },
+ {
+  "pi": 23,
+  "nome": "ALEXANDRE CURI",
+  "cargo": "Senador",
+  "part": "REPUBLICANOS",
+  "antes": [
+   "agro",
+   "economia"
+  ],
+  "origAntes": "site",
+  "depois": [
+   "saude",
+   "educacao",
+   "seguranca",
+   "economia",
+   "agro",
+   "social",
+   "infra",
+   "inovacao",
+   "ambiente",
+   "transparencia",
+   "inclusao",
+   "moradia",
+   "esporte"
+  ],
+  "decidir": [],
+  "ev": {
+   "saude": "site: 2 termos · ALEP: entre as 3 principais",
+   "educacao": "site: 6 termos",
+   "seguranca": "site: 7 termos · ALEP: entre as 3 principais",
+   "economia": "site: 8 termos",
+   "agro": "site: 5 termos",
+   "social": "site: 2 termos",
+   "infra": "site: 7 termos",
+   "inovacao": "site: 3 termos",
+   "ambiente": "site: 4 termos",
+   "transparencia": "site: 3 termos",
+   "inclusao": "site: 3 termos · ALEP: entre as 3 principais",
+   "moradia": "site: 2 termos",
+   "esporte": "site: 2 termos"
+  },
+  "fonte": "Site declarado ao TSE: alexandrecuri.com.br/leis-e-projetos/ + alexandrecuri.com.br/propostas/ | ALEP 2003–2026 (dado já no guia; só as 3 principais causas estão guardadas)",
+  "notas": []
+ },
+ {
+  "pi": 24,
+  "nome": "MARCELO MARCELINO",
+  "cargo": "Senador",
+  "part": "PCO",
+  "antes": [
+   "trabalho"
+  ],
+  "origAntes": "site do partido",
+  "depois": [],
+  "decidir": [],
+  "ev": {},
+  "fonte": "Site declarado ao TSE: candidatos.pco.org.br/c/marcelo-marcelino/",
+  "notas": [
+   "\"educação\" aparece só na biografia (\"dá aula na educação básica\"), não é proposta. Retirada. As propostas do texto (fim do Senado, cancelamento das dívidas, imposto sobre grandes fortunas) têm 1 termo cada, abaixo da regra de 2."
+  ]
+ },
+ {
+  "pi": 25,
+  "nome": "FILIPE BARROS",
+  "cargo": "Senador",
+  "part": "PL",
+  "antes": [],
+  "origAntes": "—",
+  "depois": [
+   "saude",
+   "educacao",
+   "seguranca",
+   "economia",
+   "agro",
+   "trabalho",
+   "infra",
+   "inovacao",
+   "inclusao",
+   "mobilidade"
+  ],
+  "decidir": [],
+  "ev": {
+   "saude": "Câmara: 4 proposições",
+   "educacao": "Câmara: 7 proposições",
+   "seguranca": "Câmara: 12 proposições",
+   "economia": "Câmara: 9 proposições",
+   "agro": "Câmara: 3 proposições",
+   "trabalho": "Câmara: 2 proposições",
+   "infra": "Câmara: 2 proposições",
+   "inovacao": "Câmara: 2 proposições",
+   "inclusao": "Câmara: 2 proposições",
+   "mobilidade": "Câmara: 2 proposições"
+  },
+  "fonte": "Site declarado ao TSE: filipebarros.com.br/ | Câmara 2019-2026: 118 proposições normativas (PL/PEC/PLP/PDL…) de autoria ou coautoria",
+  "notas": [
+   "Site sem seção de propostas (texto biográfico). Bandeiras vêm do mandato na Câmara."
+  ]
+ },
+ {
+  "pi": 26,
+  "nome": "JOAQUIM DO MLB",
+  "cargo": "Senador",
+  "part": "UP",
+  "antes": [],
+  "origAntes": "—",
+  "depois": [],
+  "decidir": [],
+  "ev": {},
+  "fonte": "Declarou ao TSE apenas redes sociais; sem site, sem plano e sem mandato.",
+  "notas": [
+   "Sem fonte oficial com propostas: fica sem bandeira (o guia mostra \"sem informação\" em vez de inferir pela ocupação)."
+  ]
+ },
+ {
+  "pi": 27,
+  "nome": "KAREN GUERREIRO",
+  "cargo": "Senador",
+  "part": "MISSÃO",
+  "antes": [
+   "economia"
+  ],
+  "origAntes": "ocupação",
+  "depois": [],
+  "decidir": [],
+  "ev": {},
+  "fonte": "Declarou ao TSE apenas redes sociais; sem site, sem plano e sem mandato.",
+  "notas": [
+   "Sem fonte oficial com propostas: fica sem bandeira (o guia mostra \"sem informação\" em vez de inferir pela ocupação)."
+  ]
+ },
+ {
+  "pi": 28,
+  "nome": "DR ROSINHA",
+  "cargo": "Senador",
+  "part": "PT",
+  "antes": [
+   "saude",
+   "economia",
+   "educacao"
+  ],
+  "origAntes": "Câmara (top 3)",
+  "depois": [
+   "saude",
+   "educacao",
+   "seguranca",
+   "economia",
+   "trabalho",
+   "infra",
+   "ambiente",
+   "transparencia",
+   "cultura",
+   "mobilidade",
+   "esporte"
+  ],
+  "decidir": [
+   "agro",
+   "social"
+  ],
+  "ev": {
+   "saude": "Câmara: 9 proposições",
+   "educacao": "Câmara: 4 proposições",
+   "seguranca": "Câmara: 6 proposições",
+   "economia": "Câmara: 6 proposições",
+   "trabalho": "Câmara: 3 proposições",
+   "infra": "Câmara: 2 proposições",
+   "ambiente": "site: 5 termos · Câmara: 2 proposições",
+   "transparencia": "Câmara: 5 proposições",
+   "cultura": "Câmara: 4 proposições",
+   "mobilidade": "Câmara: 2 proposições",
+   "esporte": "Câmara: 3 proposições"
+  },
+  "fonte": "Site declarado ao TSE: drrosinha132.com.br/ | Câmara 1999-2014: 135 proposições normativas (PL/PEC/PLP/PDL…) de autoria ou coautoria",
+  "notas": [
+   "O site tem seções explícitas \"Agricultura, meio ambiente e reforma agrária\" e \"Direitos humanos e segurança da mulher\". A regra de 2 termos só pega Meio ambiente. Agro e Social ficam para sua decisão (marcados como \"a decidir\")."
+  ]
+ },
+ {
+  "pi": 29,
+  "nome": "DELTAN DALLAGNOL",
+  "cargo": "Senador",
+  "part": "NOVO",
+  "antes": [
+   "transparencia",
+   "seguranca"
+  ],
+  "origAntes": "site",
+  "depois": [
+   "seguranca",
+   "transparencia"
+  ],
+  "decidir": [],
+  "ev": {
+   "seguranca": "site: 2 termos · Câmara: 3 proposições",
+   "transparencia": "site: 6 termos · Câmara: 4 proposições"
+  },
+  "fonte": "Site declarado ao TSE: deltandallagnol.com.br/mandato/ | Câmara 2023-2023: 22 proposições normativas (PL/PEC/PLP/PDL…) de autoria ou coautoria",
+  "notas": [
+   "meusenadorassina.com.br (abaixo-assinado) não foi usado: não é página de propostas."
+  ]
+ }
+]

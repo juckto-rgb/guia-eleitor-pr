@@ -10,7 +10,7 @@ Ferramenta **gratuita, apartidária e não comercial** que reúne, em um só lug
 
 ## O que é
 
-Um guia do eleitor que mostra, para cada candidatura: situação no TSE, patrimônio declarado, histórico eleitoral, atuação no mandato (proposições, projetos de lei, emendas), votos da última eleição para quem está em mandato vigente, bandeiras/causas (das propostas registradas), cidade natal e redes declaradas. Inclui **"Minha Cola"** (lista pessoal para levar na hora de votar, salva só no aparelho), **mapa de origem** dos candidatos, **infográficos** demográficos e **acessibilidade** (leitor de áudio, alto contraste, texto ampliável, VLibras).
+Um guia do eleitor que mostra, para cada candidatura: situação no TSE, patrimônio declarado, histórico eleitoral, atuação no mandato (proposições, projetos de lei, emendas), votos da última eleição para quem está em mandato vigente, bandeiras/temas (só de fonte oficial: plano de governo, site declarado ao TSE ou mandato), cidade natal e redes declaradas. Inclui **"Minha Cola"** (lista pessoal para levar na hora de votar, salva só no aparelho), **mapa de origem** dos candidatos, **infográficos** demográficos e **acessibilidade** (leitor de áudio, alto contraste, texto ampliável, VLibras).
 
 ## Princípios (neutralidade)
 
@@ -24,20 +24,34 @@ Um guia do eleitor que mostra, para cada candidatura: situação no TSE, patrim�
 
 | Fonte | Uso |
 |---|---|
-| **TSE** — Divulgação de Candidaturas | candidaturas, situação, patrimônio, histórico, redes, foto |
+| **TSE** — Divulgação de Candidaturas | candidaturas, situação, patrimônio, histórico, redes, foto, **planos de governo** (presidente e governador) |
+| **Sites declarados ao TSE** pelos candidatos | propostas usadas nas bandeiras (só o site que cita o nome do candidato) |
 | **TSE** — Resultados de eleições | votos (2018/2022/2024) de quem está em mandato vigente |
 | **Câmara dos Deputados** — Dados Abertos | proposições e projetos de lei do mandato atual |
 | **Senado Federal** — Dados Abertos | atuação de senadores |
-| **ALEP** — Assembleia Legislativa do PR | atuação de deputados estaduais |
+| **ALEP** — API de Dados Abertos (`webservices.assembleia.pr.leg.br/api/public`) | proposições de deputados estaduais (atuação e bandeiras) |
 | **Portal da Transparência / CGU** | emendas parlamentares (valor pago) |
 | **IBGE / TSE** | códigos de UF e municípios |
 
 ## Arquitetura
 
-- **Página única, autossuficiente** (`index.html`, ~1,6 MB): HTML + CSS inline + JavaScript vanilla, **sem build e sem back-end**. Deploy é só publicar o arquivo.
+- **Página única, autossuficiente** (`index.html`, ~1,7 MB): HTML + CSS inline + JavaScript vanilla, **sem build e sem back-end**. Deploy é só publicar o arquivo.
 - Dados embutidos como variáveis JS; cards gerados em runtime; fotos carregadas por link do TSE (lazy).
 - Segurança: CSP via `<meta>`; hospedagem no Vercel (HSTS).
 - **Acessibilidade:** auditada com Google Lighthouse — mobile **Acessibilidade 97 · Boas Práticas 100 · SEO 100** (ver `auditoria/`).
+- **Encontrabilidade (SEO):** dados estruturados JSON-LD (`WebApplication` + `Dataset`), `sitemap.xml` e `robots.txt`; propriedade verificada no Google Search Console.
+
+## Bandeiras (temas): como são definidas
+
+Só entram temas encontrados em **fonte oficial**. Nada é deduzido de profissão, nome de urna, partido ou rede social. Cada ficha mostra de qual fonte veio o tema, com link.
+
+| Cargo | Fonte | Regra |
+|---|---|---|
+| Presidente e governador | Plano de governo registrado no TSE (obrigatório para cargo executivo) | tema com **2 ou mais termos diferentes** no plano, sem limite de quantidade |
+| Senador e deputado | Página de propostas do site declarado ao TSE | tema com 2 ou mais termos diferentes; o site precisa citar o nome do candidato |
+| Senador e deputado com mandato | Proposições normativas (PL, PLP, PEC, PDL) na Câmara, no Senado ou na ALEP | tema com **2 ou mais proposições**; projetos **cerimoniais** (utilidade pública, título honorário, nome de rua, data comemorativa) **não contam** |
+
+Os termos de cada tema estão em [`pipeline/rules.js`](pipeline/rules.js). Quem não tem nenhuma dessas fontes aparece como **"sem proposta registrada em fonte oficial"**. As bandeiras são exibidas em ordem alfabética. Scripts e resultados em [`pipeline/bandeiras/`](pipeline/bandeiras/).
 
 ## Como rodar localmente
 
@@ -61,6 +75,7 @@ Os scripts ficam em [`pipeline/`](pipeline/) e são documentados em [`pipeline/R
 | `votos.cjs` / `inject-votos.cjs` | votos do mandato vigente (resultados oficiais do TSE) |
 | `refresh-map.cjs` | recalcula o mapa de origem dos candidatos |
 | `build-demo.cjs` | monta os infográficos demográficos |
+| `bandeiras/` | bandeiras por fonte oficial: planos do TSE, sites declarados, Câmara, Senado e ALEP (ver o README da pasta) |
 
 **Nota importante:** o portal do TSE (`divulgacandcontas.tse.jus.br`) bloqueia robôs (WAF); as consultas de candidatura rodam por **XHR no navegador**, no próprio domínio do TSE. Câmara, Senado, ALEP e Portal da Transparência têm APIs/arquivos abertos acessíveis diretamente. As fontes brutas usadas ficam em [`pipeline/fontes/`](pipeline/fontes/) (ver o `LEIA-ME-fontes.txt`).
 
@@ -68,21 +83,28 @@ Os scripts ficam em [`pipeline/`](pipeline/) e são documentados em [`pipeline/R
 
 A pasta [`auditoria/`](auditoria/) traz os relatórios oficiais do **Google Lighthouse** (mobile e desktop, antes e depois das melhorias de acessibilidade), como evidência de qualidade e replicabilidade.
 
+## Pesquisa com usuários (usabilidade)
+
+A pasta [`pesquisa/`](pesquisa/) traz o kit de teste **moderado**: `teste-usabilidade.html` (roteiro de 8 tarefas, questionário validado **UEQ** de 26 itens, termo de consentimento LGPD, ficha de coleta). A aplicação online do teste é um projeto à parte, fora deste repositório. Resultado (01–02/10/2026, 11 participantes): 86% das tarefas feitas sem ajuda; as falhas se concentraram em "Onde eu voto" e acessibilidade, que ganharam atalhos no topo da página. Também entraram a barra fixa de filtros e a correção do mapa que travava as abas de cargo.
+
 ## Estrutura do repositório
 
 ```
 index.html            # o guia (app completo)
+sitemap.xml, robots.txt
 favicon.png, og-image.png
 LEIA-ME.txt           # nota rápida de publicação (Vercel)
 pipeline/             # scripts de coleta/atualização + dados intermediários + docs
   README.md, ROTINA-CHECAGEM.md
   fontes/             # dados brutos das fontes oficiais (+ LEIA-ME-fontes.txt)
+  bandeiras/          # bandeiras por fonte oficial (scripts + resultados)
 auditoria/            # relatórios Lighthouse (evidência)
+pesquisa/             # kit de teste de usabilidade (moderado)
 ```
 
 ## Publicação (deploy)
 
-Arraste o `index.html` no projeto do Vercel (fluxo manual). Após publicar, force o recarregamento (Ctrl+Shift+R) para furar o cache.
+Publique **todos os arquivos estáticos juntos** (`index.html`, `og-image.png`, `favicon.png`, `robots.txt`, `sitemap.xml`): no Vercel, o deploy por arrastar substitui o projeto inteiro, então arrastar só o `index.html` derruba os demais. Após publicar, force o recarregamento (Ctrl+Shift+R) para furar o cache.
 
 ## Licença
 

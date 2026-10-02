@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://guiaeleitorpr.sorttie.com.br/sitemap.xml

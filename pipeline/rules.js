@@ -1,5 +1,5 @@
 module.exports={
- saude:['saude publica','sus','hospital','postos? de saude','\\bupa\\b','\\bubs\\b','vacina','cancer','oncolog','farmaceut','medicament','santa casa','\\bsamu\\b','enfermeir','pronto.?socorro','saude '],
+ saude:['saude publica','\\bsus\\b','hospital','postos? de saude','\\bupa\\b','\\bubs\\b','vacina','cancer','oncolog','farmaceut','medicament','santa casa','\\bsamu\\b','enfermeir','pronto.?socorro','saude '],
  educacao:['educacao','escola','professor','ensino','universidad','creche','alfabetiz','magisterio','merenda','bolsa de estudo','aluno','estudante'],
  seguranca:['seguranca publica','\\bpolicia','policial','violenc','\\bcrime','criminal','delegad','guarda municipal','combate ao crime','trafico','penitenci','\\bbandid','armament'],
  economia:['empreend','desburocra','\\bcnpj\\b','geracao de emprego','desenvolvimento economic','\\bcomercio\\b','industria','imposto','tributari','livre mercado','abertura de empresa','microempre','investimento','pequenos negocios'],

@@ -1,0 +1,9 @@
+# dados brutos regenerados pelos scripts (grandes e/ou textos de terceiros)
+dep-inventario.json
+dep-sites-texto*.json
+render-*.json
+leg-bruto.json
+alep-bruto.json
+alep-por-pi.json
+tse-*.json
+render-out.jsonl

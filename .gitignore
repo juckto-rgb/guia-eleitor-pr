@@ -21,3 +21,6 @@ Thumbs.db
 # Observação: os CSVs brutos grandes de fontes oficiais podem ser rebaixados
 # (ver pipeline/fontes/LEIA-ME-fontes.txt). O pacote fontes-csv.zip é mantido
 # no repositório como evidência de reprodutibilidade.
+
+# tracking interno de entregas (não publicar)
+STATUS-ENTREGAS.md
