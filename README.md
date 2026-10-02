@@ -85,7 +85,7 @@ A pasta [`auditoria/`](auditoria/) traz os relatórios oficiais do **Google Ligh
 
 ## Pesquisa com usuários (usabilidade)
 
-A pasta [`pesquisa/`](pesquisa/) traz o kit de teste **moderado**: `teste-usabilidade.html` (roteiro de 8 tarefas, questionário validado **UEQ** de 26 itens, termo de consentimento LGPD, ficha de coleta). A aplicação online do teste é um projeto à parte, fora deste repositório. Resultado (01–02/10/2026, 11 participantes): 86% das tarefas feitas sem ajuda; as falhas se concentraram em "Onde eu voto" e acessibilidade, que ganharam atalhos no topo da página. Também entraram a barra fixa de filtros e a correção do mapa que travava as abas de cargo.
+A pasta [`pesquisa/`](pesquisa/) traz o kit de teste **moderado**: `teste-usabilidade.html` (roteiro de 8 tarefas, questionário validado **UEQ** de 26 itens, termo de consentimento LGPD, ficha de coleta). A aplicação online do teste é um projeto à parte, fora deste repositório.
 
 ## Estrutura do repositório
 
