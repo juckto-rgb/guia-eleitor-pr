@@ -18,7 +18,7 @@ function faixa(nasc){ if(!nasc)return null; const b=new Date(nasc), ref=new Date
 function esc(g){ if(!g)return null; g=g.toLowerCase(); if(g.indexOf('superior')>-1)return'Superior'; if(g.indexOf('médio')>-1||g.indexOf('medio')>-1)return'Médio'; if(g.indexOf('fundamental')>-1)return'Fundamental'; if(g.indexOf('lê e escreve')>-1||g.indexOf('le e escreve')>-1)return'Lê e escreve'; return'Outro'; }
 
 const DEMO=[]; let miss=0;
-function push(sq, part, cargoSlug){ const e=E[sq]; if(!e){miss++;return;} DEMO.push({c:cargoSlug, p:part||'?', s:e.sexo==='FEM.'?'F':'M', r:COR[e.cor]||e.cor, e:esc(e.grau), f:faixa(e.nasc)}); }
+function push(sq, part, cargoSlug){ const e=E[sq]; if(!e){miss++;return;} DEMO.push({q:sq, c:cargoSlug, p:part||'?', s:e.sexo==='FEM.'?'F':'M', r:COR[e.cor]||e.cor, e:esc(e.grau), f:faixa(e.nasc)}); }
 
 DEPS.forEach(d=>push(String(d.sq), d.part, CARGOMAP[d.cargo]||d.cargo));
 Object.keys(MAJ).forEach(sq=>push(sq, MAJ[sq].part, CARGOMAP[MAJ[sq].cargo]));

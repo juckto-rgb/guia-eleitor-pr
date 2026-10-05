@@ -10,7 +10,8 @@
  *     "deps":    [ {sq,nome,num,part,cargo,ocup,grau,idade}, ... ],   // novos (opcional)
  *     "detail":  { "<sq>": {nc,sit,nat,tot,proc,col,bens,hist,sup,sites,atual}, ... } } // detalhe dos novos
  *
- * pi = ordem DOM dos deputados (senador -> federal -> estadual), começando em 20.
+ * pi = ordem DOM dos deputados (senador -> federal -> estadual), começando em 21
+ * (corrigido em 03/10/2026: a base 20 perdia o último de cada bloco quando havia inclusão).
  * Detalhe dos novos vem do TSE (browser). Depois: atualizar contagem/rodapé,
  * sincronizar pastas de deploy e subir index.html.
  */
@@ -31,7 +32,7 @@ const rawSITE=grab('var SITE_CAUSAS = ','{','}'), SITE=JSON.parse(rawSITE);
 
 function ordem(deps){const s=deps.filter(d=>d.cargo==='senador'),f=deps.filter(d=>d.cargo==='federal'),e=deps.filter(d=>d.cargo==='estadual');return s.concat(f).concat(e);}
 const ordOld=ordem(DEPS);
-const piToSq={}; ordOld.forEach((d,k)=>piToSq[20+k]=d.sq);
+const piToSq={}; ordOld.forEach((d,k)=>piToSq[21+k]=d.sq); // pi do card no DOM = 21+idx (majoritários ocupam 0-20)
 console.log('deputados atuais:',ordOld.length);
 
 const removeSet=new Set(upd.remover);
@@ -42,10 +43,10 @@ add.forEach(d=>console.log('  adicionar:',d.sq,'['+d.cargo+'] '+d.nome));
 
 const DEPS2=DEPS.filter(d=>!removeSet.has(d.sq)).concat(add);
 const ordNew=ordem(DEPS2);
-const sqToNewPi={}; ordNew.forEach((d,k)=>sqToNewPi[d.sq]=20+k);
+const sqToNewPi={}; ordNew.forEach((d,k)=>sqToNewPi[d.sq]=21+k);
 console.log('removidos:',DEPS.length-DEPS.filter(d=>!removeSet.has(d.sq)).length,'| adicionados:',add.length,'| deputados agora:',ordNew.length);
 
-function rekey(obj,nome){const out={};let ok=0,perd=0;Object.keys(obj).forEach(k=>{const pi=+k;if(pi<20){out[pi]=obj[k];return;}const sq=piToSq[pi];if(!sq)return;if(removeSet.has(sq)){perd++;return;}const np=sqToNewPi[sq];if(np==null)return;out[np]=obj[k];ok++;});console.log('  '+nome+': re-keyed '+ok+' | descartado '+perd);return out;}
+function rekey(obj,nome){const out={};let ok=0,perd=0;Object.keys(obj).forEach(k=>{const pi=+k;if(pi<21){out[pi]=obj[k];return;}const sq=piToSq[pi];if(!sq)return;if(removeSet.has(sq)){perd++;return;}const np=sqToNewPi[sq];if(np==null)return;out[np]=obj[k];ok++;});console.log('  '+nome+': re-keyed '+ok+' | descartado '+perd);return out;}
 const ALEP2=rekey(ALEP,'ALEP'),CAMFED2=rekey(CAMFED,'CAMFED'),SENADO2=rekey(SENADO,'SENADO'),CAMARA2=rekey(CAMARA,'CAMARA'),VER2=rekey(VER_MUN,'VER_MUN'),SITE2=rekey(SITE,'SITE_CAUSAS');
 
 // bandeiras novas (Fase 2): {sq:{c:[...],src:"..."}} -> injeta em SITE_CAUSAS no pi do DOM.
@@ -54,9 +55,9 @@ const ALEP2=rekey(ALEP,'ALEP'),CAMFED2=rekey(CAMFED,'CAMFED'),SENADO2=rekey(SENA
 // cancelam (lê e grava em 20+k), então o enriquecimento existente fica DOM-alinhado sozinho;
 // mas a INJEÇÃO é posição absoluta -> precisa +1 para bater com o data-pi do card.
 const band=upd.bandeiras||{};
-Object.keys(band).forEach(sq=>{ const base=sqToNewPi[sq]; if(base==null){console.log('  !! bandeira p/ sq fora do guia:',sq);return;} const domPi=base+1; SITE2[domPi]=band[sq]; const d=DEPS2.find(x=>x.sq===sq); console.log('  +bandeira: '+(d?d.nome:sq)+' -> pi'+domPi+' ['+band[sq].c.join(',')+'] ('+band[sq].src+')'); });
+Object.keys(band).forEach(sq=>{ const base=sqToNewPi[sq]; if(base==null){console.log('  !! bandeira p/ sq fora do guia:',sq);return;} const domPi=base; /* base já é o pi do DOM (21+idx) desde 03/10/2026 */ SITE2[domPi]=band[sq]; const d=DEPS2.find(x=>x.sq===sq); console.log('  +bandeira: '+(d?d.nome:sq)+' -> pi'+domPi+' ['+band[sq].c.join(',')+'] ('+band[sq].src+')'); });
 
-function verify(re,vOld,vNew,label){const d=ordOld.find(x=>new RegExp(re,'i').test(x.nome));if(!d)return;const o=20+ordOld.indexOf(d),n=sqToNewPi[d.sq];const a=JSON.stringify(vOld[o]||null),b=JSON.stringify(vNew[n]||null);console.log('  '+(a===b?'OK':'!!DIFERE')+' '+d.nome+' ['+label+']');}
+function verify(re,vOld,vNew,label){const d=ordOld.find(x=>new RegExp(re,'i').test(x.nome));if(!d)return;const o=21+ordOld.indexOf(d),n=sqToNewPi[d.sq];const a=JSON.stringify(vOld[o]||null),b=JSON.stringify(vNew[n]||null);console.log('  '+(a===b?'OK':'!!DIFERE')+' '+d.nome+' ['+label+']');}
 console.log('\n--- verificação (dado por sq preservado) ---');
 verify('ALEXANDRE CURI',ALEP,ALEP2,'ALEP');verify('LUISA CANZIANI',CAMFED,CAMFED2,'CAMFED');verify('DELTAN',CAMFED,CAMFED2,'CAMFED');
 

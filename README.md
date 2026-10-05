@@ -31,6 +31,8 @@ Um guia do eleitor que mostra, para cada candidatura: situação no TSE, patrim�
 | **Senado Federal** — Dados Abertos | atuação de senadores |
 | **ALEP** — API de Dados Abertos (`webservices.assembleia.pr.leg.br/api/public`) | proposições de deputados estaduais (atuação e bandeiras) |
 | **Portal da Transparência / CGU** | emendas parlamentares (valor pago) |
+| **TSE** — Resultados 2026 (`resultados.tse.jus.br`) | resultado oficial do 1º turno: votos, situação (eleito, 2º turno) e votos de cada eleito por município |
+| **IBGE** — API de malhas v3 | contorno dos 399 municípios do PR (mapa "Onde os eleitos tiveram votos") |
 | **IBGE / TSE** | códigos de UF e municípios |
 
 ## Arquitetura
@@ -75,6 +77,9 @@ Os scripts ficam em [`pipeline/`](pipeline/) e são documentados em [`pipeline/R
 | `votos.cjs` / `inject-votos.cjs` | votos do mandato vigente (resultados oficiais do TSE) |
 | `refresh-map.cjs` | recalcula o mapa de origem dos candidatos |
 | `build-demo.cjs` | monta os infográficos demográficos |
+| `resultados-2026.cjs` / `inject-resultados-2026.cjs` | resultado oficial do 1º turno (TSE): "Quem ganhou", selos e perfil dos eleitos; só mostra eleito quando o TSE informa a situação |
+| `votos-municipio-2026.cjs` / `inject-votos-mun-2026.cjs` | votos de cada eleito por município (arquivos do TSE por município, com o % publicado pelo TSE); confere que a soma bate com o total estadual |
+| `geo-pr-municipios.cjs` | contorno dos municípios do PR (IBGE) para o mapa de votos |
 | `bandeiras/` | bandeiras por fonte oficial: planos do TSE, sites declarados, Câmara, Senado e ALEP (ver o README da pasta) |
 
 **Nota importante:** o portal do TSE (`divulgacandcontas.tse.jus.br`) bloqueia robôs (WAF); as consultas de candidatura rodam por **XHR no navegador**, no próprio domínio do TSE. Câmara, Senado, ALEP e Portal da Transparência têm APIs/arquivos abertos acessíveis diretamente. As fontes brutas usadas ficam em [`pipeline/fontes/`](pipeline/fontes/) (ver o `LEIA-ME-fontes.txt`).

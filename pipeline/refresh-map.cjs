@@ -28,7 +28,9 @@ const DD=JSON.parse(grab('var DEP_DETAIL = ','{','}'));
 const PROF=JSON.parse(grab('var PROFILES = ','[',']'));
 // só majoritários (Presidente/Governador) — os demais de PROFILES são "destaques"
 // que também estão no DEP_DETAIL; contá-los duplicaria (ver histórico do projeto).
-const maj=PROF.filter(d=>d.cargo==='Presidente'||d.cargo==='Governador');
+// FORA_URNA: candidatos que continuam nos dados (posição fixa), mas não constam na urna e não aparecem no guia (03/10/2026)
+const FORA_URNA_MAJ=['PABLO MARÇAL'];
+const maj=PROF.filter(d=>(d.cargo==='Presidente'||d.cargo==='Governador')&&!FORA_URNA_MAJ.includes(d.nome));
 
 // contagem por cidade (chave normalizada) + total fora do PR por UF
 const cnt={}, uf={}; let total=0, foraPR=0;
