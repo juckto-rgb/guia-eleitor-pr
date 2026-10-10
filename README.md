@@ -113,7 +113,7 @@ Publique **todos os arquivos estáticos juntos** (`index.html`, `og-image.png`, 
 
 ## Licença
 
-Código-fonte sob **[licença MIT](LICENSE)** — livre para reusar e adaptar, com atribuição. O **nome "Guia Eleitor PR", a marca Sorttie e a linha editorial não são licenciados** (ver [`NOTICE.md`](NOTICE.md)). Os **dados** são públicos e oficiais das fontes citadas. O código é aberto justamente para tornar o método **auditável** — reforçando a imparcialidade do projeto.
+Código-fonte sob **[licença MIT](LICENSE)** — livre para reusar e adaptar, com atribuição. O **nome "Guia Eleitor PR", a marca Sorttie e a linha editorial não são licenciados** (ver [`NOTICE.md`](NOTICE.md)). Os **dados** são públicos e oficiais das fontes citadas; o **conjunto de dados organizado** pelo guia é disponibilizado sob **[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.pt-br)**: livre para reusar, inclusive comercialmente, citando o Guia Eleitor PR (Sorttie) e as fontes oficiais. O código é aberto justamente para tornar o método **auditável** — reforçando a imparcialidade do projeto.
 
 ## Créditos
 

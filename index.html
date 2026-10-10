@@ -81,6 +81,7 @@ gtag('js',new Date());gtag('config','G-T7242R07L6',{allow_google_signals:false,a
       "isAccessibleForFree": true,
       "creator": { "@id": "https://www.sorttie.com.br/#org" },
       "keywords": ["eleições 2026", "Paraná", "candidatos", "TSE", "dados abertos", "transparência"],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
       "sameAs": "https://dados.gov.br/dados/reuso/212"
     }
   ]
@@ -800,6 +801,8 @@ gtag('js',new Date());gtag('config','G-T7242R07L6',{allow_google_signals:false,a
   .cookie-bar.show{transform:translateX(-50%) translateY(0)}
   .cookie-bar p{margin:0; font-size:12px; line-height:1.4; flex:1 1 160px; min-width:0}
   .cookie-bar a{color:var(--accent-ink); text-decoration:underline}
+  body.cookie-on .cola-fab{display:none !important}
+  body.cookie-on .a11y-fab{bottom:calc(var(--cookie-h,90px) + 26px)}
   .cookie-acts{display:flex; gap:6px; flex:0 0 auto; margin-left:auto}
   .cookie-btn{font-family:inherit; font-size:12px; font-weight:700; border-radius:999px; padding:6px 13px; cursor:pointer; border:1px solid var(--line); white-space:nowrap}
   .cookie-btn.ok{background:var(--accent); color:var(--on-accent); border-color:var(--accent)}
@@ -1296,7 +1299,7 @@ gtag('js',new Date());gtag('config','G-T7242R07L6',{allow_google_signals:false,a
   </section>
 
   <footer class="pg" id="fontes">
-    <p class="disclosure"><b>Guia Eleitor PR 2026</b> é uma iniciativa <b>apartidária e não comercial</b> da Sorttie: não é propaganda, não recomenda voto, não tem vínculo com candidatos ou partidos e não recebeu recursos de campanha; os dados são preliminares e vêm de fontes oficiais (TSE, Câmara, ALEP e Senado), cabendo a decisão de voto exclusivamente ao eleitor. Nome, número, partido e redes vêm do TSE; as bandeiras (temas) vêm só de fonte oficial: plano de governo registrado no TSE, site declarado ao TSE ou proposições de mandato na Câmara, na ALEP e no Senado, sem as cerimoniais. Sem essa fonte não há bandeira; nada é deduzido da profissão, do nome de urna, do partido ou de redes sociais. A ordem dos deputados é aleatória, sorteada a cada acesso, para que todos tenham a mesma chance de serem vistos — sem privilegiar o início do alfabeto; presidente, governador e senador aparecem em ordem alfabética. A situação das candidaturas e a lista da urna foram conferidas no TSE em 04/10/2026 e ainda pode mudar com julgamentos até a eleição. Fontes consultadas de 02 a 04/10/2026: Divulgação de Candidaturas do TSE (lista, situação e planos de governo), sites declarados ao TSE pelos candidatos e Dados Abertos da Câmara, da ALEP e do Senado Federal. Seu local de votação, se você o anotar na cola, fica salvo <b>só no seu dispositivo</b> — o Guia não envia nada a nenhum servidor. Observe sempre o número na urna antes de confirmar. <b>Última atualização deste guia: 05/10/2026 às 13h56.</b></p>
+    <p class="disclosure"><b>Guia Eleitor PR 2026</b> é uma iniciativa <b>apartidária e não comercial</b> da Sorttie: não é propaganda, não recomenda voto, não tem vínculo com candidatos ou partidos e não recebeu recursos de campanha; os dados são preliminares e vêm de fontes oficiais (TSE, Câmara, ALEP e Senado), cabendo a decisão de voto exclusivamente ao eleitor. Nome, número, partido e redes vêm do TSE; as bandeiras (temas) vêm só de fonte oficial: plano de governo registrado no TSE, site declarado ao TSE ou proposições de mandato na Câmara, na ALEP e no Senado, sem as cerimoniais. Sem essa fonte não há bandeira; nada é deduzido da profissão, do nome de urna, do partido ou de redes sociais. A ordem dos deputados é aleatória, sorteada a cada acesso, para que todos tenham a mesma chance de serem vistos — sem privilegiar o início do alfabeto; presidente, governador e senador aparecem em ordem alfabética. A situação das candidaturas e a lista da urna foram conferidas no TSE em 04/10/2026 e ainda pode mudar com julgamentos até a eleição. Fontes consultadas de 02 a 04/10/2026: Divulgação de Candidaturas do TSE (lista, situação e planos de governo), sites declarados ao TSE pelos candidatos e Dados Abertos da Câmara, da ALEP e do Senado Federal. Seu local de votação, se você o anotar na cola, fica salvo <b>só no seu dispositivo</b> — o Guia não envia nada a nenhum servidor. Observe sempre o número na urna antes de confirmar. <b>Última atualização deste guia: 10/10/2026 às 11h04.</b></p>
     <p style="margin-top:10px;font-size:12px">Reúso de dados abertos homologado no <a href="https://dados.gov.br/dados/reuso/212" target="_blank" rel="noopener" style="color:var(--accent);font-weight:600">Portal Brasileiro de Dados Abertos (dados.gov.br)</a>.</p>
   </footer>
 
@@ -2457,12 +2460,12 @@ var CAMARA = {"25":{"camaraId":204411,"nomeParlamentar":"Filipe Barros","cargoAt
   function getCookie(){ var m=document.cookie.match(/(?:^|; )gep_cookie=([^;]+)/); return m?m[1]:null; }
   function ls(){ try{ return localStorage.getItem(KEY); }catch(e){ return null; } }
   var v = ls() || getCookie();   // persiste por localStorage OU cookie (à prova de modo privado)
-  if(v!=='ok' && v!=='no'){ setTimeout(function(){ bar.classList.add('show'); }, 900); }
+  if(v!=='ok' && v!=='no'){ setTimeout(function(){ bar.classList.add('show'); document.body.classList.add('cookie-on'); var _ch=function(){ document.body.style.setProperty('--cookie-h', (bar.offsetHeight+(parseFloat(getComputedStyle(bar).bottom)||0))+'px'); }; _ch(); window.addEventListener('resize', _ch); }, 900); } // enquanto o aviso está aberto, o botão Minha cola sai da frente
   function decidir(escolha){
     try{ localStorage.setItem(KEY, escolha); }catch(e){}
     try{ document.cookie = 'gep_cookie='+escolha+'; max-age=31536000; path=/; SameSite=Lax'; }catch(e){}
     if(escolha==='ok' && window.gtag){ gtag('consent','update',{analytics_storage:'granted'}); }
-    bar.classList.remove('show');
+    bar.classList.remove('show'); document.body.classList.remove('cookie-on');
     setTimeout(function(){ bar.hidden = true; }, 400); // fecha de vez após a animação
   }
   document.getElementById('cookieOk').addEventListener('click', function(){ decidir('ok'); });
