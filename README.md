@@ -78,7 +78,7 @@ Os scripts ficam em [`pipeline/`](pipeline/) e são documentados em [`pipeline/R
 | `refresh-map.cjs` | recalcula o mapa de origem dos candidatos |
 | `build-demo.cjs` | monta os infográficos demográficos |
 | `resultados-2026.cjs` / `inject-resultados-2026.cjs` | resultado oficial do 1º turno (TSE): "Quem ganhou", selos e perfil dos eleitos; só mostra eleito quando o TSE informa a situação |
-| `votos-municipio-2026.cjs` / `inject-votos-mun-2026.cjs` | votos de cada eleito por município (arquivos do TSE por município, com o % publicado pelo TSE); confere que a soma bate com o total estadual |
+| `votos-municipio-2026.cjs` / `inject-votos-mun-2026.cjs` | votos de cada eleito por município (arquivos do TSE por município, com o % publicado pelo TSE) e, para presidente, dos dois candidatos que foram ao 2º turno, com os votos do 1º turno nos municípios do PR; confere que a soma bate com o total do PR publicado pelo TSE |
 | `geo-pr-municipios.cjs` | contorno dos municípios do PR (IBGE) para o mapa de votos |
 | `bandeiras/` | bandeiras por fonte oficial: planos do TSE, sites declarados, Câmara, Senado e ALEP (ver o README da pasta) |
 
