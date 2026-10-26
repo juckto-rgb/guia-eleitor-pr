@@ -1,4 +1,4 @@
-/* resultados-2026.cjs — apuração oficial do 1º turno de 04/10/2026 (TSE), por cargo.
+/* resultados-2026.cjs — apuração oficial do 1º turno de 04/10/2026 e do 2º turno de presidente de 25/10/2026 (TSE), por cargo.
  *
  * Fonte: serviço oficial de divulgação de resultados do TSE (o mesmo do app Resultados):
  *   config:  https://resultados.tse.jus.br/oficial/comum/config/ele-c.json
@@ -18,6 +18,8 @@ const BASE = 'https://resultados.tse.jus.br/oficial/ele2026';
 const ALVOS = [
   ['presidente', 6257, 'br', 1], ['governador', 6259, 'pr', 3], ['senador', 6259, 'pr', 5],
   ['federal', 6259, 'pr', 6], ['estadual', 6259, 'pr', 7],
+  // 2º turno de presidente (25/10): total do Brasil e votos no PR
+  ['presidente2t', 6258, 'br', 1], ['presidente2t_pr', 6258, 'pr', 1],
 ];
 const pad = (n, k) => String(n).padStart(k, '0');
 async function baixar(cargo, ele, uf, cd) {
