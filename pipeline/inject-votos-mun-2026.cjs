@@ -10,6 +10,7 @@ if (falta.length) { console.error('municípios sem contorno:', falta.map(m => m[
 const c = {}; Object.keys(V.c).forEach(k => { c[k] = 1; });
 const sq = {}; Object.keys(V.sq).forEach(k => { sq[k] = { c: V.sq[k].c, v: V.sq[k].v, p: V.sq[k].p }; });
 const data = { at: V.at, mun: V.mun.map(m => m[1]), c, sq };
+if (V.t2) data.t2 = V.t2; // 2º turno de presidente: { sq: { sqcand: { v, p } } }
 const geo = { vb: G.vb, d: V.mun.map(m => G.d[m[0]]) };
 const A = '/*VOTOS_MUN*/', Z = '/*FIM_VOTOS_MUN*/';
 let h = fs.readFileSync(FILE, 'utf8');

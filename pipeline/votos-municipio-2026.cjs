@@ -1,5 +1,6 @@
 // Votos de cada eleito do PR por município (1º turno 2026), direto dos arquivos oficiais do TSE (resultados.tse.jus.br).
 // Presidente (eleição nacional 6257): entram os que foram ao 2º turno, com os votos do 1º turno nos municípios do PR.
+// 2º turno de presidente (6258): os mesmos dois, em out.t2, quando o TSE concluir a totalização.
 // Só cargos com totalização concluída (tf = "s"). Saída: pipeline/_votos-mun-2026.json
 // Uso: node pipeline/resultados-2026.cjs && node pipeline/votos-municipio-2026.cjs
 const fs = require('fs');
@@ -12,6 +13,7 @@ const CARGOS = {
   federal: { cc: '0006', ele: '6259', quem: /^eleit/i },
   estadual: { cc: '0007', ele: '6259', quem: /^eleit/i }
 };
+const T2 = { cc: '0001', ele: '6258' }; // 2º turno de presidente (25/10): os dois finalistas nos municípios do PR
 const RES = JSON.parse(fs.readFileSync(path.join(__dirname, '_resultados-2026.json'), 'utf8')).cargos;
 
 const get = async (u, t = 0) => {
@@ -26,7 +28,7 @@ const e6 = ele => ele.padStart(6, '0');
 (async () => {
   // municípios do PR na ordem do código IBGE; o código TSE de cada eleição é lido do config dela
   const cdTse = {};
-  for (const ele of [...new Set(Object.values(CARGOS).map(x => x.ele))]) {
+  for (const ele of [...new Set(Object.values(CARGOS).map(x => x.ele).concat(T2.ele))]) {
     const cfg = await get(B + ele + '/config/mun-e' + e6(ele) + '-cm.json');
     cdTse[ele] = {}; cfg.abr.find(a => a.cd === 'pr').mu.forEach(m => { cdTse[ele][m.cdi] = { cd: m.cd, nm: m.nm }; });
   }
@@ -54,6 +56,21 @@ const e6 = ele => ele.padStart(6, '0');
     else x.cands.forEach(k => { totPR[k.sq] = +k.vap; });
     sel.forEach(sq => { const soma = out.sq[sq].v.reduce((a, b) => a + b, 0); if (soma !== totPR[sq]) console.log('  ATENÇÃO soma difere', cg, sq, soma, totPR[sq]); });
     console.log(cg + ': ' + sel.length + ' candidatos, ' + mun.length + ' municípios');
+  }
+  // 2º turno de presidente: entra só com a totalização concluída pelo TSE; soma conferida com o arquivo estadual do PR
+  const x2 = RES.presidente2t;
+  if (!x2 || x2.tf !== 's') console.log('presidente 2º turno: totalização ainda não concluída no TSE, fica de fora');
+  else {
+    out.t2 = { sq: {} };
+    x2.cands.forEach(k => { out.t2.sq[k.sq] = { v: new Array(mun.length).fill(0), p: new Array(mun.length).fill(0) }; });
+    await pool(mun, 8, async (m, idx) => {
+      const t = cdTse[T2.ele][m[0]]; if (!t) throw new Error('2º turno: município ' + m[1] + ' sem código na eleição ' + T2.ele);
+      const j = await get(B + T2.ele + '/dados/pr/pr' + t.cd + '-c' + T2.cc + '-e' + e6(T2.ele) + '-u.json');
+      cands(j.carg, k => { const s = out.t2.sq[k.sqcand]; if (s) { s.v[idx] = +k.vap || 0; s.p[idx] = Math.round(parseFloat(String(k.pvap || '0').replace(',', '.')) * 100) || 0; } });
+    });
+    const totPR = {}; cands((await get(B + T2.ele + '/dados/pr/pr-c' + T2.cc + '-e' + e6(T2.ele) + '-u.json')).carg, k => { totPR[k.sqcand] = +k.vap; });
+    Object.keys(out.t2.sq).forEach(sq => { const soma = out.t2.sq[sq].v.reduce((a, b) => a + b, 0); console.log('  2º turno ' + sq + ': soma dos municípios ' + soma + ' · total do PR no TSE ' + totPR[sq] + (soma === totPR[sq] ? ' ✓' : ' ATENÇÃO soma difere')); });
+    out.fonte += '; 2º turno de presidente, 25/10/2026';
   }
   const b = new Date(Date.now() - 3 * 3600e3), p = n => String(n).padStart(2, '0');
   out.at = p(b.getUTCDate()) + '/' + p(b.getUTCMonth() + 1) + '/' + b.getUTCFullYear() + ' ' + p(b.getUTCHours()) + ':' + p(b.getUTCMinutes());
