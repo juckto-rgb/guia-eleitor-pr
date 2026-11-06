@@ -10,7 +10,7 @@ Ferramenta **gratuita, apartidária e não comercial** que reúne, em um só lug
 
 ## O que é
 
-Um guia do eleitor que mostra, para cada candidatura: situação no TSE, patrimônio declarado, histórico eleitoral, atuação no mandato (proposições, projetos de lei, emendas), votos da última eleição para quem está em mandato vigente, bandeiras/temas (só de fonte oficial: plano de governo, site declarado ao TSE ou mandato), cidade natal e redes declaradas. Inclui o resultado oficial (**"Quem ganhou"**, 1º e 2º turno), **mapa de origem** dos candidatos, **infográficos** demográficos e **acessibilidade** (leitor de áudio, alto contraste, texto ampliável, VLibras).
+Um guia do eleitor que mostra, para cada candidatura: situação no TSE, patrimônio declarado, receitas e despesas de campanha (prestação de contas final), histórico eleitoral, atuação no mandato (proposições, projetos de lei, emendas), votos da última eleição para quem está em mandato vigente, bandeiras/temas (só de fonte oficial: plano de governo, site declarado ao TSE ou mandato), cidade natal e redes declaradas. Inclui o resultado oficial (**"Quem ganhou"**, 1º e 2º turno), **mapa de origem** dos candidatos, **infográficos** demográficos e **acessibilidade** (leitor de áudio, alto contraste, texto ampliável, VLibras).
 
 ## Princípios (neutralidade)
 
@@ -31,6 +31,7 @@ Um guia do eleitor que mostra, para cada candidatura: situação no TSE, patrim�
 | **Senado Federal** — Dados Abertos | atuação de senadores |
 | **ALEP** — API de Dados Abertos (`webservices.assembleia.pr.leg.br/api/public`) | proposições de deputados estaduais (atuação e bandeiras) |
 | **Portal da Transparência / CGU** | emendas parlamentares (valor pago) |
+| **TSE** — Prestação de contas 2026 (`cdn.tse.jus.br`, dados abertos) | receitas por origem e despesas contratadas por tipo da prestação final de cada candidato da urna |
 | **TSE** — Resultados 2026 (`resultados.tse.jus.br`) | resultado oficial do 1º turno: votos, situação (eleito, 2º turno) e votos de cada eleito por município; 2º turno de presidente: votos no Brasil e no PR e situação |
 | **IBGE** — API de malhas v3 | contorno dos 399 municípios do PR (mapa "Onde os eleitos tiveram votos") |
 | **IBGE / TSE** | códigos de UF e municípios |
@@ -78,6 +79,7 @@ Os scripts ficam em [`pipeline/`](pipeline/) e são documentados em [`pipeline/R
 | `refresh-map.cjs` | recalcula o mapa de origem dos candidatos |
 | `build-demo.cjs` | monta os infográficos demográficos |
 | `resultados-2026.cjs` / `inject-resultados-2026.cjs` | resultado oficial do 1º turno e do 2º turno de presidente (TSE): "Quem ganhou", selos e perfil dos eleitos; só mostra eleito quando o TSE informa a situação |
+| `gastos-2026.cjs` / `inject-gastos-2026.cjs` | dinheiro de campanha: totais por origem e por tipo da prestação de contas final (sem doador, fornecedor ou CPF); conferido por amostra com o DivulgaCand |
 | `votos-municipio-2026.cjs` / `inject-votos-mun-2026.cjs` | votos de cada eleito por município (arquivos do TSE por município, com o % publicado pelo TSE) e, para presidente, dos dois candidatos que foram ao 2º turno, com os votos do 1º e do 2º turno nos municípios do PR; confere que a soma bate com o total do PR publicado pelo TSE |
 | `geo-pr-municipios.cjs` | contorno dos municípios do PR (IBGE) para o mapa de votos |
 | `bandeiras/` | bandeiras por fonte oficial: planos do TSE, sites declarados, Câmara, Senado e ALEP (ver o README da pasta) |
